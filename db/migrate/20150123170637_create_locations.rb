@@ -4,7 +4,7 @@ class CreateLocations < ActiveRecord::Migration
       t.string :city
       t.string :country
 
-      t.timestamps null: false
+      t.timestamps :null => false
     end
   end
 end

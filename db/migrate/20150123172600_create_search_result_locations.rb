@@ -4,7 +4,7 @@ class CreateSearchResultLocations < ActiveRecord::Migration
       t.references :search_result
       t.references :location
 
-      t.timestamps null: false
+      t.timestamps :null => false
     end
   end
 end

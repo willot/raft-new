@@ -11,10 +11,51 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150122225947) do
+ActiveRecord::Schema.define(version: 20150123172600) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "locations", force: :cascade do |t|
+    t.string   "city"
+    t.string   "country"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "search_result_locations", force: :cascade do |t|
+    t.integer  "search_result_id"
+    t.integer  "location_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  create_table "search_results", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "budget"
+    t.datetime "start_at"
+    t.datetime "end_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "travelers", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "trip_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "trips", force: :cascade do |t|
+    t.integer  "origin_id"
+    t.integer  "destination_id"
+    t.datetime "start_at"
+    t.datetime "end_at"
+    t.text     "description"
+    t.integer  "user_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name"
