@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :created_trips, class_name: "Trip", foreign_key: "creator_id"
+
   has_many :travelers
   has_many :trips, through: :travelers
 
