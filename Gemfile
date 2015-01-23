@@ -38,6 +38,9 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'rspec-rails'
+  gem 'shoulda-matchers', require: false
+  gem 'simplecov', require: false
+  gem 'shoulda-callback-matchers', '~> 1.1.1' , require: false#use to test the before something or after something
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'

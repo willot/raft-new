@@ -6,7 +6,6 @@ class User < ActiveRecord::Base
   validates :last_name, presence: true
   validates_length_of :bio,
     :maximum => 2000,
-    :too_short => "You need at least 100 characters",
     :too_long => "You are limited to 2000 characters"
 
   validates_length_of :password,
