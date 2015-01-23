@@ -8,15 +8,15 @@ require "action_controller/railtie"
 require "action_mailer/railtie"
 require "action_view/railtie"
 require "sprockets/railtie"
-require "rspec/core/rake_task"
+# require "rspec/core/rake_task"
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-RSpec::Core::RakeTask.new(:spec)
-task :default => :spec
+# RSpec::Core::RakeTask.new(:spec)
+# task :default => :spec
 
 module Travelmate
   class Application < Rails::Application
