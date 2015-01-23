@@ -4,3 +4,6 @@ rvm:
 
 notifications:
   slack: travelmate:CWUdNnYkSABUcXffYoajyr6z
+
+before_script:
+  - psql -c 'create database raft_test;' -U postgres

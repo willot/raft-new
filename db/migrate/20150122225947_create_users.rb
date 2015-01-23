@@ -11,7 +11,7 @@ class CreateUsers < ActiveRecord::Migration
       t.boolean :guide, :default => false
       #t.references :location
 
-      t.timestamps, null: false
+      t.timestamps :null => false
     end
   end
 end
