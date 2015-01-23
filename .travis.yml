@@ -2,6 +2,5 @@ language: ruby
 rvm:
   - 2.0.0
 
-# travis encrypt "travelmate:56MhnWrCxkbbbRoMGhDitMmf" --add notifications.slack
 notifications:
   slack: travelmate:CWUdNnYkSABUcXffYoajyr6z
