@@ -8,8 +8,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.string :password_digest
       t.text :bio
-      t.boolean :guide ||= false
-      references :location
+      t.boolean :guide, :default => false
+      #references :location
 
       t.timestamps null: false
     end
