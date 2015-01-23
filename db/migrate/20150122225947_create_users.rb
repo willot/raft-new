@@ -9,9 +9,9 @@ class CreateUsers < ActiveRecord::Migration
       t.string :password_digest
       t.text :bio
       t.boolean :guide, :default => false
-      #references :location
+      #t.references :location
 
-      t.timestamps null: false
+      t.timestamps, null: false
     end
   end
 end
