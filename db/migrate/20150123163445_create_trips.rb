@@ -4,7 +4,7 @@ class CreateTrips < ActiveRecord::Migration
       t.references :origin
       t.references :destination
       t.datetime   :start_at
-      t.datetime   :stasrt_at
+      t.datetime   :end_at
       t.text       :description
       t.references :user
 
