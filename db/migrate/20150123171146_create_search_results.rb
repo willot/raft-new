@@ -6,7 +6,7 @@ class CreateSearchResults < ActiveRecord::Migration
       t.datetime   :start_at
       t.datetime   :end_at
 
-      t.timestamps null: false
+      t.timestamps :null => false
     end
   end
 end

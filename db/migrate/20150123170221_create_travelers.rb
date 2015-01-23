@@ -4,7 +4,7 @@ class CreateTravelers < ActiveRecord::Migration
       t.references :user
       t.references :trip
 
-      t.timestamps null: false
+      t.timestamps :null => false
     end
   end
 end

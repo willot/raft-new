@@ -8,7 +8,7 @@ class CreateTrips < ActiveRecord::Migration
       t.text       :description
       t.references :user
 
-      t.timestamps null: false
+      t.timestamps :null => false
     end
   end
 end
