@@ -1,4 +1,4 @@
 class Location < ActiveRecord::Base
-  validates :city, prescence: true
-  validates :country, prescence: true
+  validates :city, presence: true
+  validates :country, presence: true
 end
