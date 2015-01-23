@@ -2,4 +2,5 @@ language: ruby
 rvm:
   - 2.0.0
 
-
+notifications:
+  slack: travelmate:CWUdNnYkSABUcXffYoajyr6z
