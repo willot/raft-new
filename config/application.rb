@@ -29,7 +29,7 @@ end
 # RSpec::Core::RakeTask.new(:spec)
 # task :default => :spec
 
-module Travelmate
+module Raft
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
