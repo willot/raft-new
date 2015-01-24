@@ -34,9 +34,10 @@ gem 'rails_12factor', group: :production
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-#secure way to store Amazon Credientials needed for Carrierwave
-gem 'figaro'
 
+#Carrierwave gems
+gem 'carrierwave'
+gem 'figaro'
 gem "fog"
 
 group :development, :test do
