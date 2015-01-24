@@ -4,8 +4,8 @@ class User < ActiveRecord::Base
 
   has_many :created_trips, class_name: "Trip", source: :creator
 
-  has_many :destinations, through: :trips, class_name: "Location"
-  has_many :origins, through: :trips, class_name: "Location"
+  has_many :destinations, through: :trips
+  has_many :origins, through: :trips
 
   has_many :search_results
   has_many :search_result_locations, through: :search_results
