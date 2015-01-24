@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#destroy'
 
   resources :users
+  root "search_results#new"
 
   get '/search_results' => 'search_results#index'
   post '/search_results' => 'search_results#create'
