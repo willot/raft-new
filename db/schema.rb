@@ -35,8 +35,9 @@ ActiveRecord::Schema.define(version: 20150124203347) do
     t.integer  "budget"
     t.datetime "start_at"
     t.datetime "end_at"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "current_city"
   end
 
   create_table "travelers", force: :cascade do |t|
@@ -66,6 +67,7 @@ ActiveRecord::Schema.define(version: 20150124203347) do
     t.string   "password_digest"
     t.text     "bio"
     t.boolean  "guide",           default: false
+    t.integer  "location_id"
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
     t.string   "avatar"

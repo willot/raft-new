@@ -9,7 +9,4 @@
 <p>Insert city</p>
 <% end %>
 
-<%= form_for @search_result, url: {action: "create"},
- html: {class: "search_query"} do |f| %>
-  <%= f.text_field, :city %>
-
+<%= render "search_results/form" %>
