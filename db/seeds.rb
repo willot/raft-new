@@ -1,5 +1,12 @@
 require 'ffaker'
 
+locations = 20.times.map do
+  Location.create!({
+    city: Faker::Address.city,
+    country: Faker::Address.country
+    })
+end
+
 users = 20.times.map do
   User.create!({
     first_name: Faker::Name.first_name,
@@ -8,14 +15,8 @@ users = 20.times.map do
     age: rand(18..60),
     email: Faker::Internet.email,
     password: "password",
-    bio: Faker::HipsterIpsum.paragraph
-    })
-end
-
-locations = 20.times.map do
-  Location.create!({
-    city: Faker::Address.city,
-    country: Faker::Address.country
+    bio: Faker::HipsterIpsum.paragraph,
+    location_id: locations.sample.id
     })
 end
 

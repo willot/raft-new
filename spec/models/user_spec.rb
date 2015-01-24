@@ -28,4 +28,16 @@ RSpec.describe User, :type => :model do
     it { expect(user).to have_secure_password}
   end
 
+  context "Checking the association" do
+    it { expect(user).to belong_to(:location) }
+    it { expect(user).to have_many(:travelers) }
+    it { expect(user).to have_many(:trips) }
+    it { expect(user).to have_many(:created_trips) }
+    it { expect(user).to have_many(:destinations) }
+    it { expect(user).to have_many(:origins) }
+    it { expect(user).to have_many(:search_results) }
+    it { expect(user).to have_many(:search_result_locations) }
+    it { expect(user).to have_many(:searched_locations) }
+  end
+
 end
