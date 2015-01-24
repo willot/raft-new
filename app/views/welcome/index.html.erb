@@ -3,10 +3,13 @@
   The time is now: <%= Time.now %>
 </p>
 
-<%= @ip %>
 <% if @city %>
 <h2>Leaving from <%= @city %></h2>
 <% else %>
 <p>Insert city</p>
 <% end %>
+
+<%= form_for @search_result, url: {action: "create"},
+ html: {class: "search_query"} do |f| %>
+  <%= f.text_field, :city %>
 

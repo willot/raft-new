@@ -211,11 +211,8 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (~> 3.1.7)
   byebug
-<<<<<<< HEAD
   geokit
-=======
   ffaker
->>>>>>> 8d84dcadc2d9903a2193cbe627340b60959f87e4
   jbuilder (~> 2.0)
   jquery-rails
   pg
