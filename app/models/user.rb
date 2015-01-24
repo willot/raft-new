@@ -1,4 +1,16 @@
 class User < ActiveRecord::Base
+  has_many :travelers
+  has_many :trips, through: :travelers
+
+  has_many :created_trips, class_name: "Trip", source: :creator
+
+  has_many :destinations, through: :trips
+  has_many :origins, through: :trips
+
+  has_many :search_results
+  has_many :search_result_locations, through: :search_results
+  has_many :searched_locations, through: :search_result_locations, source: :location
+
   validates :username, uniqueness: true, presence: true
   validates :email, uniqueness: true, presence: true
   validates_format_of :email, :with => /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/
