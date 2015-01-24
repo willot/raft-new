@@ -1,5 +1,8 @@
 class SearchResultsController < ApplicationController
   def index
+  end
+
+  def new
     @search_result = SearchResult.new
     @ip = request.ip
     @user_location = Location.new
