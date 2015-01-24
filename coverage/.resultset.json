@@ -58,15 +58,6 @@
         1,
         null
       ],
-      "/Users/apprentice/Desktop/travelmate/travelmate/app/models/trip.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
       "/Users/apprentice/Desktop/travelmate/travelmate/app/models/user.rb": [
         1,
         1,
@@ -86,8 +77,25 @@
         null,
         1,
         null
+      ],
+      "/Users/apprentice/Desktop/travelmate/travelmate/app/models/trip.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/apprentice/Desktop/travelmate/travelmate/app/models/search_result.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1422062907
+    "timestamp": 1422119511
   }
 }
