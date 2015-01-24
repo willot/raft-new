@@ -15,8 +15,24 @@
 </head>
 
 <body>
+  <nav>
+    <ul>
+      <li><%= link_to 'Home', index_path %></li>
+      <% if current_user %>
+        <li><%= link_to 'Trips', %></li>
+        <li><%= link_to 'Searches', %></li>
+        <li><%= link_to 'Guides', %></li>
+        <li><%= link_to 'Sign Out', %></li>
+      <% else %>
+        <li><%= link_to 'Log In', %></li>
+        <li><%= link_to 'Sign Up', %></li>
+      <% end %>
+    </ul>
+  </nav>
 
   <%= yield %>
 
+  <footer>
+  </footer>
 </body>
 </html>
