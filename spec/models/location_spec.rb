@@ -7,4 +7,14 @@ RSpec.describe Location, :type => :model do
     it { expect(location).to validate_presence_of(:city) }
     it { expect(location).to validate_presence_of(:country) }
   end
+
+  context "Checking the association" do
+    it { expect(location).to have_many(:trip_origins) }
+    it { expect(location).to have_many(:trip_destinations) }
+    it { expect(location).to have_many(:travelers) }
+    it { expect(location).to have_many(:users) }
+    it { expect(location).to have_many(:search_result_locations) }
+    it { expect(location).to have_many(:search_results) }
+    it { expect(location).to have_many(:residents)}
+  end
 end
