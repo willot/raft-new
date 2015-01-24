@@ -52,12 +52,6 @@
         1,
         null
       ],
-      "/Users/apprentice/Desktop/travelmate/travelmate/app/models/location.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
       "/Users/apprentice/Desktop/travelmate/travelmate/app/models/user.rb": [
         1,
         1,
@@ -79,6 +73,6 @@
         null
       ]
     },
-    "timestamp": 1422059591
+    "timestamp": 1422057180
   }
 }
