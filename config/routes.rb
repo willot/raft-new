@@ -6,7 +6,8 @@ Rails.application.routes.draw do
 
   resources :users
 
-  root 'welcome#index'
+  get '/search_results' => 'search_results#index'
+  post '/search_results' => 'search_results#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

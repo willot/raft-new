@@ -1,0 +1,7 @@
+<%= form_for @search_result do |f| %>
+  <%= f.label "City" %>
+  <%= f.text_field :current_city, value: @city %><br>
+   <%= f.label "Max budget" %>
+  <%= f.text_field :budget %><br>
+  <%= f.submit "Send me somewhere" %>
+<% end %>
