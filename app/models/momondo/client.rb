@@ -1,4 +1,6 @@
 require 'savon'
+require "active_support/core_ext/hash"
+require_relative 'result.rb'
 
 module Momondo
   class Client
@@ -17,7 +19,7 @@ module Momondo
         origCode: options[:leave_from],
         priceTo: options[:max_price],
         departYear: leave_date.year,
-        departMonth: leave_date.month,
+        departMonth: leave_date.month
       }))
     end
 
@@ -25,8 +27,15 @@ module Momondo
 
     def results_from(data)
       data = Hash.from_xml(data.to_s)
+      p data
       results = data['Envelope']['Body']['WhereToGoResponse']['WhereToGoResult']['WhereToGoResult']
       results.map {|r| Momondo::Result.new(Hash[r.map {|k,v| [k.underscore.to_sym, v]}]) }
     end
   end
 end
+
+client = Momondo::Client.new
+results = client.where_to_go(leave_from: "LAX", max_price: 2000, leave_date: '05/07/2015')
+puts
+puts
+p results
