@@ -1,6 +1,6 @@
 <div class="standard_box">
   <% @results.each do |result| %>
-    <%= result.destination %><br>
+    <%= convert_airport_to_city(result.destination) %><br>
     <%= result.depart_time %><br>
     <%= result.return_time %><br>
     <%= result.price%>
