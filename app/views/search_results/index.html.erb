@@ -1,9 +1,12 @@
 <div class="standard_box">
   <% @results.each do |result| %>
-    <%= convert_airport_to_city(result.destination) %><br>
-    <%= result.depart_time %><br>
-    <%= result.return_time %><br>
-    <%= result.price%>
-    <br><br>
+    <div class="initial_results">
+      <h2><%= convert_airport_to_city(result.destination).capitalize %></h2>
+      <h3>$<%= result.price%></h3>
+      <p>From <%= result.depart_time.month %>/<%= result.depart_time.day %>/<%= result.depart_time.year %>
+      To <%= result.return_time.month %>/<%= result.return_time.day %>/<%= result.return_time.year %>
+      <%= link_to "Book Ticket", "momondo.com"%>
+      <%= link_to "Save Trip",
+    </div>
   <% end %>
 </div>
