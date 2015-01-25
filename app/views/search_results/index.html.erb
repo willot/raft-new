@@ -5,8 +5,12 @@
       <h3>$<%= result.price%></h3>
       <p>From <%= result.depart_time.month %>/<%= result.depart_time.day %>/<%= result.depart_time.year %>
       To <%= result.return_time.month %>/<%= result.return_time.day %>/<%= result.return_time.year %>
-      <%= link_to "Book Ticket", "momondo.com"%>
-      <%= link_to "Save Trip",
+      <div class="save_trip_button"><%= link_to "Create Trip", new_trip_path%></div>
+      <div class="book_button"><%= link_to "Or Book Ticket", "momondo.com"%></div>
     </div>
   <% end %>
+</div>
+
+<div class="sidebar">
+  <%= link_to "Save Search Results", new_search_result_path%>
 </div>

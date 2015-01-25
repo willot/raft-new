@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :trips
   resources :users
+  resources :search_results
 
   get '/user_searches' => 'search_results#user_index'
   get '/search_results' => 'search_results#index'
