@@ -1,5 +1,7 @@
-
-
-
-
-
+<% @results.each do |result| %>
+  <%= result.destination %><br>
+  <%= result.depart_time %><br>
+  <%= result.return_time %><br>
+  <%= result.price%>
+  <br><br>
+<% end %>
