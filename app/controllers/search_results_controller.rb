@@ -16,7 +16,6 @@ class SearchResultsController < ApplicationController
    @client = Momondo::Client.new
    @results = @client.where_to_go(leave_date: '05/07/2015',leave_from: "LAX", max_price: @search_result.budget )
 
-
    render "search_results/index"
   end
 
