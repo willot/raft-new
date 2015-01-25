@@ -13,6 +13,8 @@ class Location < ActiveRecord::Base
 
   has_many :residents, class_name: "User", foreign_key: "location_id"
 
+  has_many :airports
+
   validates :city, presence: true
   # validates :country, presence: true
 
