@@ -68,3 +68,7 @@ body {
 
   text-align: center;
 }
+/*This is just to be able to see the results on the page*/
+.results{
+  color: white;
+}

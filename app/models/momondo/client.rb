@@ -1,6 +1,8 @@
 require 'savon'
 require "active_support/core_ext/hash"
 require_relative 'result.rb'
+require 'date'
+
 
 module Momondo
   class Client
