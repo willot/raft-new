@@ -1,7 +1,9 @@
-<% @results.each do |result| %>
-  <%= result.destination %><br>
+<div class="results">
+  <% @results.each do |result| %>
+  <%= convert_airport_to_city(result.destination) %><br>
   <%= result.depart_time %><br>
   <%= result.return_time %><br>
   <%= result.price%>
   <br><br>
 <% end %>
+</div>
