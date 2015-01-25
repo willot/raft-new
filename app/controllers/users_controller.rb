@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+  before_action :set_user, only: [:show]
   def new
     @user = User.new
   end
@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   end
 
   def set_user
-    @user = User.find_by(slug: params[:id])
+    @user = User.find(params[:id])
   end
 
 end
