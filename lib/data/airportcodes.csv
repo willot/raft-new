@@ -1,6 +1,5 @@
 "Aalborg, Denmark ",AAL
 "Aalesund, Norway ",AES
-"Aarhus, Denmark - Bus service ",ZID
 "Aarhus, Denmark - Tirstrup ",AAR
 "Aasiaat, Greenland ",JEG
 "Abadan, Iran ",ABD
@@ -60,18 +59,14 @@
 "Alamosa, CO ",ALS
 "Al-Baha, Saudi Arabia ",ABT
 "Albany, NY ",ALB
-"Albany, OR - Bus service ",CVO
-"Albany, OR - Bus service ",QWY
 "Albuquerque, NM ",ABQ
 "Albury, Australia ",ABX
 "Alderney, United Kingdom ",ACI
-"Aldershot, ON - Rail service ",XLY
 "Aleknagik, AK ",WKK
 "Aleppo, Syrian Arab Republic ",ALP
 "Alexander Bay, South Africa ",ALJ
 "Alexandria, Egypt ",ALY
 "Alexandria, LA ",AEX
-"Alexandria,ON - Rail service ",XFS
 "Alexandroupolis, Greece ",AXD
 "Al-Fujairah, United Arab Emirates ",FJR
 "Alghero, Italy ",AHO
@@ -120,7 +115,6 @@
 "Aneityum, Vanuatu ",AUY
 "Angelholm/Helsingborg, Sweden ",JHE
 "Angers, France - Marce ",ANE
-"Angers, France - Rail service ",QXG
 "Anggi, Indonesia ",AGD
 "Anging, China ",AQG
 "Angling Lake, ON ",YAX
@@ -143,7 +137,6 @@
 "Antsalova, Madagascar ",WAQ
 "Antsiranana, Madagascar ",DIE
 "Antsohihy, Madagascar ",WAI
-"Antwerp, Belgium - Bus service ",ZAY
 "Antwerp, Belgium - Deurne Airport ",ANR
 "Anvik, AK ",ANV
 "Aomori, Japan ",AOJ
@@ -286,7 +279,6 @@
 "Barter Island, AK ",BTI
 "Basco, Philippines ",BSO
 "Basel, Switzerland ",BSL
-"Basel/Mulhouse Railway Station, Switzerland ",ZDH
 "Bashehr, Iran ",BUZ
 "Bastia, France ",BIA
 "Batam, Indonesia ",BTH
@@ -307,7 +299,6 @@
 "Bayreuth, Germany ",BYU
 "Bearskin Lake, ON ",XBE
 "Beaumont/Port Arthur, TX ",BPT
-"Beaver Creek, CO - Van service ",ZBV
 "Beaver, AK ",WBQ
 "Bechar, Algeria ",CBH
 "Beckley, WV ",BKW
@@ -333,7 +324,6 @@
 "Bella Bella, BC ",ZEL
 "Bella Coola, BC ",QBC
 "Belleville, IL ",BLV
-"Belleville, ON - Rail service ",XVV
 "Bellingham, WA ",BLI
 "Bellona, Solomon Islands ",BNY
 "Belo Horizonte, Brazil - Pampulha ",PLU
@@ -356,7 +346,6 @@
 "Berlin, Germany - Tempelhof ",THF
 "Bermuda, Bermuda ",BDA
 "Berne, Switzerland - Belp Airport ",BRN
-"Berne, Switzerland - Rail service ",ZDJ
 "Besalampy, Madagascar ",BPY
 "Bethel, AK ",BET
 "Bethlehem, PA ",ABE
@@ -434,7 +423,6 @@
 "Borroloola, Australia ",BOX
 "Bossaro, Somalia ",BSA
 "Boston, MA ",BOS
-"Boulder, CO - Bus service ",XHH
 "Boulder, CO - Hiltons Har H ",WHH
 "Boulder, CO - Municipal Airport ",WBU
 "Boulia, Australia ",BQL
@@ -448,16 +436,13 @@
 "Bradford, PA ",BFD
 "Brainerd, MN ",BRD
 "Brampton Island, Australia ",BMP
-"Brampton, ON - Rail service ",XPN
 "Brandon, MB ",YBR
-"Brantford, ON - Rail service ",XFV
 "Brasilia, DF, Brazil ",BSB
 "Bratislava, Slovakia ",BTS
 "Bratsk, Russia ",BTK
 "Braunschweig, Denmark ",BWE
 "Brawnwood, TX ",BWD
 "Brazzaville, Congo ",BZV
-"Breckenridge, CO - Van service ",QKB
 "Bremen, Germany ",BRE
 "Brest, France ",BES
 "Brewarrina, Australia ",BWQ
@@ -467,7 +452,6 @@
 "Bristol, United Kingdom ",BRS
 "Bristol, VA ",TRI
 "Brive-La-Gaillarde, France - Laroche",BVE
-"Brno, Czech Republic - Bus service ",ZDN
 "Brno, Czech Republic - Turany ",BRQ
 "Brochet, MB ",YBT
 "Brockville, ON ",XBR
@@ -480,7 +464,6 @@
 "Brunswick, GA ",BQK
 "Brus Laguna, Honduras ",BHG
 "Brussels, Belgium - National ",BRU
-"Brussels, Belgium - Rail service ",ZYR
 "Brussels, Belguim - Charleroi ",CRL
 "Bucaramanga, Colombia ",BGA
 "Bucharest, Romania - Baneasa ",BBU
@@ -531,7 +514,6 @@
 "Cambridge, United Kingdom ",CBG
 "Camodoro, Argentina ",CRD
 "Campbell River, BC ",YBL
-"Campbellton, NB - Rail service ",XAZ
 "Campbeltown, United Kingdom ",CAL
 "Campeche, Mexico ",CPE
 "Campina Grande, Brazil ",CPV
@@ -554,7 +536,6 @@
 "Cape Orford, Papua New Guinea ",CPI
 "Cape Town, South Africa ",CPT
 "Cape Vogel, Papua New Guinea ",CVL
-"Capreol, ON - Rail service ",XAW
 "Caracas, Venezuela ",CCS
 "Carajas, Brazil ",CKS
 "Carbondale, IL ",MDH
@@ -573,7 +554,6 @@
 "Cascavel, Brazil ",CAC
 "Casino, Australia ",CSI
 "Casper, WY ",CPR
-"Casselman, ON - Rail service ",XZB
 "Castaway, Fiji ",CST
 "Castlegar, BC ",YCG
 "Castres, France ",DCM
@@ -595,10 +575,8 @@
 "Chah-Bahar, Iran ",ZBR
 "Chalkyitsik, AK ",CIK
 "Chambery, France ",CMF
-"Chambord, QC - Rail service ",XCI
 "Champaign/Urbana, IL ",CMI
 "Chandigarh, India ",IXC
-"Chandler, QC - Rail service ",XDL
 "Changchun, China ",CGQ
 "Changde, China ",CGD
 "Changuinda, Panama ",CHX
@@ -620,7 +598,6 @@
 "Cheboksary, Russia ",CSY
 "Chefornak, AK ",CYF
 "Chelybinsk, Russia ",CEK
-"Chemainus, BC - Rail service ",XHS
 "Chennai, India ",MAA
 "Cheongju, South Korea ",CJJ
 "Cherepovets, Russia ",CEE
@@ -665,7 +642,6 @@
 "Chuathbaluk, AK ",CHU
 "Churchill Falls, NL ",ZUM
 "Churchill, MB ",YYQ
-"Churchill, MB - Rail service ",XAD
 "Cicia, Fiji ",ICI
 "Ciego De Avila, Cuba ",AVI
 "Cincinnati, OH ",CVG
@@ -690,7 +666,6 @@
 "Clyde River, NU ",YCY
 "Cobar, Australia ",CAZ
 "Cobija, Bolivia ",CIJ
-"Cobourg, ON - Rail service ",XGJ
 "Cochabamba, Bolivia ",CBB
 "Cochin, India ",COK
 "Coconut Island, Australia ",CNC
@@ -705,7 +680,6 @@
 "Colima, Mexico ",CLQ
 "College Station, TX ",CLL
 "Cologne, Germany - Cologne/Bonn ",CGN
-"Cologne, Germany - Rail service ",QKL
 "Colombo, Sri Lanka ",CMB
 "Colon, Panama ",ONX
 "Colorado Springs, CO ",COS
@@ -731,7 +705,6 @@
 "Coonamble, Australia ",CNB
 "Copenhagen, Denmark ",CPH
 "Copiapo, Chile ",CPO
-"Copper Mountain, CO - Van service ",QCE
 "Coral Harbour, NU ",YZS
 "Cordoba, Argentina ",COR
 "Cordova, AK ",CDV
@@ -746,7 +719,6 @@
 "Corvo Island, Portugal ",CVU
 "Cotabato, Philippines ",CBO
 "Cotarou, Benin ",COC
-"Coteau, QC - Rail service ",XGK
 "Courtenay, BC ",YCA
 "Cox's Bazar, Bangladesh ",CXB
 "Cozumel, Mexico ",CZM
@@ -821,7 +793,6 @@
 "Denizli, Turkey ",DNZ
 "Denpasar Bali, Indonesia ",DPS
 "Denver, CO - International ",DEN
-"Denver, CO - Longmont Bus service ",QWM
 "Dera Ghazi, Pakistan ",DEA
 "Dera Ismail Khan, Pakistan ",DSK
 "Derby, Australia ",DRB
@@ -866,9 +837,7 @@
 "Dourados, Brazil ",DOU
 "Dovala, Cameroon ",DLA
 "Dresden, Germany ",DRS
-"Drummondville, QC - Rail service ",XDM
 "Dryden, ON ",YHD
-"Dubai, United Arab Emirates - Bus Station ",XNB
 "Dubai, United Arab Emirates - International ",DXB
 "Dubbo, Australia ",DBO
 "Dublin, Ireland ",DUB
@@ -891,7 +860,6 @@
 "Dushanbe, Tajikistan ",DYU
 "Dusseldorf, Germany - International ",DUS
 "Dusseldorf, Germany - Moenchen-Gl. ",MGL
-"Dusseldorf, Germany - Rail service ",QDU
 "Dutch Harbor, AK ",DUT
 "Dzaoudzi, Mayotte ",DZA
 "East London, South Africa ",ELS
@@ -902,7 +870,6 @@
 "Eday, United Kingdom ",EOI
 "Edinburgh, United Kingdom ",EDI
 "Edmonton, AB - International ",YEG
-"Edmonton, AB - Rail service ",XZL
 "Edna Bay, AK ",EDA
 "Edremit, Turkey ",EDO
 "Edward River, Australia ",EDR
@@ -959,7 +926,6 @@
 "Erzincan, Turkey ",ERC
 "Erzurum, Turkey ",ERZ
 "Esbjerg, Denmark - Esbjerg Airport ",EBJ
-"Esbjerg, Denmark - Rail service ",ZBB
 "Escanaba, MI ",ESC
 "Esmeraldas, Ecuador ",ESM
 "Esperance, Australia ",EPR
@@ -1016,7 +982,6 @@
 "Formosa, Argentina ",FMA
 "Fort Albany, ON ",YFA
 "Fort Chipewyan, AB ",YPY
-"Fort Collins/Loveland, CO - Bus service ",QWF
 "Fort Collins/Loveland, CO - Municipal Airport ",FNL
 "Fort Dauphin, Madagascar ",FTU
 "Fort De France, Martinique ",FDF
@@ -1046,7 +1011,6 @@
 "Frankfurt, Germany - International ",FRA
 "Franklin, PA ",FKL
 "Fredericia, Denmark ",ZBJ
-"Fredericton Junction, NB - Rail service ",XFC
 "Fredericton, NB ",YFC
 "Freeport, Bahamas ",FPO
 "Freetown, Sierra Leone - Lungi Intl ",FNA
@@ -1083,7 +1047,6 @@
 "Garoua, Cameroon ",GOV
 "Gary, IN ",GYY
 "Gaspe, QC ",YGP
-"Gaspe, QC - Rail service ",XDD
 "Gassim, Saudi Arabia ",ELQ
 "Gaua, Vanuatu ",ZGU
 "Gawahati, India ",GAU
@@ -1099,7 +1062,6 @@
 "George Town, Bahamas ",GGT
 "George, South Africa ",GRJ
 "Georgetown, Guyana ",GEO
-"Georgetown, ON - Rail service ",XHM
 "Geraldton, Australia, ",GET
 "Gerona, Spain ",GRO
 "Gethsemani, QC ",ZGS
@@ -1121,7 +1083,6 @@
 "Glasgow, United Kingdom - Glasgow International ",GLA
 "Glasgow, United Kingdom - Prestwick ",PIK
 "Glen Innes, Australia ",GLI
-"Glencoe, ON - Rail service ",XZC
 "Glendive, MT ",GDV
 "Goa, India ",GOI
 "Goba, Ethiopia ",GOB
@@ -1191,7 +1152,6 @@ Guam ,GUM
 "Guayaquil, Ecuador ",GYE
 "Guayaramerin, Bolivia ",GYA
 "Guaymas, Mexico ",GYM
-"Guelph, ON - Rail service ",XIA
 "Guernsey, United Kingdom ",GCI
 "Guerrero Negro, Mexico ",GUB
 "Guilin, China ",KWL
@@ -1222,7 +1182,6 @@ Guam ,GUM
 "Hakodate, Japan ",HKD
 "Halberstadt, Germany ",ZHQ
 "Halifax, NS - International ",YHZ
-"Halifax, NS - Rail service ",XDG
 "Hall Beach, NU ",YUX
 "Halls Creek, Australia ",HCQ
 "Halmstad, Sweden ",HAD
@@ -1278,7 +1237,6 @@ Guam ,GUM
 "Hermosillo, Mexico ",HMO
 "Herning, Denmark ",XAK
 "Hervey Bay, Australia ",HVB
-"Hervey, QC - Rail service ",XDU
 "Hibbing/Chisholm, MN ",HIB
 "Hickory, NC ",HKY
 "High Level, AB ",YOJ
@@ -1319,7 +1277,6 @@ Horn Island Australia ,HID
 "Hotan, China ",HTN
 "Houeisay, Laos ",HOE
 "Houn, Libya ",HUQ
-"Houston, BC - Bus station ",ZHO
 "Houston, TX - All airports ",HOU
 "Houston, TX - Hobby ",HOU
 "Houston, TX - Intercontinental ",IAH
@@ -1373,7 +1330,6 @@ Horn Island Australia ,HID
 "Indagen, Papua New Guinea ",IDN
 "Indianapolis, IN ",IND
 "Indore, India ",IDR
-"Ingersoll, ON - Rail service ",XIB
 "Innsbruck, Austria ",INN
 "Inta, Russia ",INA
 "International Falls, MN ",INL
@@ -1439,7 +1395,6 @@ Jambi. Indonesia ,DJB
 "Janakpur, Nepal ",JKR
 "Janesville, WI ",JVL
 "Jaque, Panama ",JQE
-"Jasper, AB - Rail service ",XDH
 "Jayapura, Indonesia ",DJJ
 "Jeddah, Saudi Arabia ",JED
 "Jeh, Marshall Islands ",JEJ
@@ -1472,12 +1427,10 @@ Jambi. Indonesia ,DJB
 "Johnstown, PA ",JST
 "Johor, Malaysia ",JHB
 "Joinville, Brazil ",JOI
-"Joliette, QC - Rail service ",XJL
 "Jommu, India ",IXJ
 "Jomsom, Nepal ",JMO
 "Jonesboro, AR ",JBR
 "Jonkoping, Sweden ",JKG
-"Jonquiere, QC - Rail service ",XJQ
 "Joplin, MO ",JLN
 "Jorhat, India ",JRH
 "Jose De San Martin, Argentina ",JSM
@@ -1559,7 +1512,6 @@ Jambi. Indonesia ,DJB
 "Kerkyra, Greece ",CFU
 "Ketchikan, AK ",KTN
 "Key West, FL ",EYW
-"Keystone, CO - Van service ",QKS
 "Khajuraho, India ",HJR
 "Kharga, Egypt ",UVL
 "Kharkov, Ukraine ",HRK
@@ -1583,7 +1535,6 @@ Kimmirut/Lake Harbour NU ,YLC
 "Kingston, Jamaica - Norman Manley ",KIN
 "Kingston, Jamaica - Tinson ",KTP
 "Kingston, ON - Norman Rogers Airport ",YGK
-"Kingston, ON - Rail service ",XEG
 "Kinshasa, Congo ",FIH
 "Kipnuk, AK ",KPN
 "Kirakira, Solomon Islands ",IRA
@@ -1664,8 +1615,6 @@ Kimmirut/Lake Harbour NU ,YLC
 "Labuan Bajo, Indonesia ",LBJ
 "Labuan, Malaysia ",LBU
 "Lac Brochet, MB ",XLB
-"Lac Edouard, QC - Rail service ",XEE
-"Ladysmith, BC - Rail service ",XEH
 "Lae Island, Marshall Islands ",LML
 "Lae, Papua New Guinea ",LAE
 "Lafayette, IN ",LAF
@@ -1691,7 +1640,6 @@ Kimmirut/Lake Harbour NU ,YLC
 "Lanai City, HI - Island of Lanai ",LNY
 "Lancaster, PA ",LNS
 "Lands End, United Kingdom ",LEQ
-"Langford, BC - Rail service ",XEJ
 "Langguri, Indonesia ",LUV
 "Langkawi, Malaysia ",LGK
 "Lannion, France ",LAI
@@ -1755,7 +1703,6 @@ Kimmirut/Lake Harbour NU ,YLC
 "Lijiang City, China ",LJG
 "Likiep Island, Marshall Islands ",LIK
 "Lille, France - Lesquin ",LIL
-"Lille, France - Rail service ",XDB
 "Lilongwe, Malawi ",LLW
 "Lima, Peru ",LIM
 "Limbang, Malaysia ",LMN
@@ -1780,7 +1727,6 @@ Kimmirut/Lake Harbour NU ,YLC
 "Loja, Ecuador ",LOH
 "Lome, Togo ",LFW
 "London, ON - Municipal Airport ",YXU
-"London, ON - Rail service ",XDQ
 "London, United Kingdom - All airports ",LON
 "London, United Kingdom - Biggin Hill ",BQH
 "London, United Kingdom - Gatwick ",LGW
@@ -1789,7 +1735,6 @@ Kimmirut/Lake Harbour NU ,YLC
 "London, United Kingdom - Luton ",LTN
 "London, United Kingdom - Stansted ",STN
 "Londonderry, United Kingdom ",LDY
-"London-Paddington, United Kingdom - Rail service ",QQP
 "Londrina, PR, Brazil ",LDB
 "Long Apung, Indonesia ",LPU
 "Long Banga, Malaysia ",LBP
@@ -1814,7 +1759,6 @@ Kimmirut/Lake Harbour NU ,YLC
 "Losuia, Papua New Guinea ",LSA
 "Louisville, KY ",SDF
 "Lourdes/Tarbes, France ",LDE
-"Loveland/Fort Collins, CO - Bus service ",QWF
 "Loveland/Fort Collins, CO - Municipal Airport ",FNL
 "Lozaro Cardenas, Mexico ",LZC
 "Luanda, Angola ",LAD
@@ -1839,7 +1783,6 @@ Kimmirut/Lake Harbour NU ,YLC
 "Luzhou, China ",LZO
 "Lvov, Ukraine ",LWO
 "Lyoksele, Sweden ",LYC
-"Lyon, France - Lyon Part-Dieu Rail service ",XYD
 "Lyon, France - Satolas ",LYS
 "Maastricht, Netherlands ",MST
 "Mabuiag Island, QL, Australia ",UBB
@@ -1968,7 +1911,6 @@ Kimmirut/Lake Harbour NU ,YLC
 "Maun, Botswana ",MUB
 "Maupiti, French Polynesia ",MAU
 "Mauritius, Mauritius ",MRU
-"Maxville, ON - Rail service ",XID
 "Mayaguana, Bahamas ",MYG
 "Mayaguez, Puerto Rico ",MAZ
 "Mazatlan, Mexico ",MZT
@@ -1992,7 +1934,6 @@ Kimmirut/Lake Harbour NU ,YLC
 "Melbourne, FL ",MLB
 "Melbourne, Victoria, Australia ",MEL
 "Melilla, Spain ",MLN
-"Melville, SK - Rail service ",XEK
 "Memanbetsu, Japan ",MMB
 "Memphis, TN ",MEM
 "Mendi, Ethiopia ",NDM
@@ -2042,7 +1983,6 @@ Kimmirut/Lake Harbour NU ,YLC
 "Minsk, Belarus - Minsk International 1 ",MHP
 "Minsk, Belarus - Minsk International 2 ",MSQ
 "Minto, AK ",MNT
-"Miramichi, NB - Rail service ",XEY
 "Miri, Malaysia ",MYY
 "Mirnyj, Russia ",MJZ
 "Misawa, Japan ",MSJ
@@ -2074,7 +2014,6 @@ Kimmirut/Lake Harbour NU ,YLC
 "Monbetsu, Japan ",MBE
 "Monclova, Mexico ",LOV
 "Moncton, NB - Airport ",YQM
-"Moncton, NB - Rail service ",XDP
 "Monkey Mia, WA, Australia ",MJK
 "Mono, Solomon Islands ",MNY
 "Monroe, LA ",MLU
@@ -2092,10 +2031,7 @@ Kimmirut/Lake Harbour NU ,YLC
 "Montpellier, France ",MPL
 "Montreal, QC - all airports ",YMQ
 "Montreal, QC - Dorval ",YUL
-"Montreal, QC - Dorval Rail service ",XAX
-"Montreal, QC - Downtown Rail service ",YMY
 "Montreal, QC - Mirabel ",YMX
-"Montreal, QC - St Lambert Rail service ",XLM
 "Montrose, CO ",MTJ
 "Montserrat, Montserrat ",MNI
 "Moorea, French Polynesia ",MOZ
@@ -2197,13 +2133,11 @@ Kimmirut/Lake Harbour NU ,YLC
 "Nanning, China ",NNG
 "Nanortalik, Greenland ",JNN
 "Nantes, France - Nantes Atlantique ",NTE
-"Nantes, France - Rail service ",QJZ
 "Nantong, China ",NTG
 "Nantucket, MA ",ACK
 "Nanyang, China ",NNY
 "Nanyuki, Kenya ",NYK
 "Napakiak, AK ",WNA
-"Napanee, ON - Rail service ",XIF
 "Napaskiak, AK ",PKA
 "Napier-Hastings, New Zealand ",NPE
 "Naples, FL ",APF
@@ -2240,7 +2174,6 @@ Kimmirut/Lake Harbour NU ,YLC
 "Neryjungri, Russia ",NER
 "Neuquen, NE, Argentina ",NQN
 "Nevis, St. Kitts and Nevis ",NEV
-"New Carlisle, QC - Rail service ",XEL
 "New Chenega, AK ",NCN
 "New Haven, CT ",HVN
 "New Koliganek, AK ",KGK
@@ -2248,7 +2181,6 @@ New London/Groton ,GON
 New London/Groton ,GON
 "New Orleans, LA ",MSY
 "New Plymouth, New Zealand ",NPL
-"New Richmond, QC - Rail service ",XEM
 "New Stuyahok, AK ",KNW
 "New York, NY - All airports ",NYC
 "New York, NY - Kennedy ",JFK
@@ -2266,7 +2198,6 @@ New London/Groton ,GON
 "Ngau Island, Fiji ",NGI
 "Ngukurr, NT, Australia ",RPM
 "Nha Trang, Viet Nam ",NHA
-"Niagara Falls, ON - Rail service ",XLV
 "Niamey, Niger ",NIM
 "Nice, France ",NCE
 "Nicosia, Cyprus ",NIC
@@ -2328,7 +2259,6 @@ New London/Groton ,GON
 "Nunapitchuk, AK ",NUP
 "Nunukan, Indonesia ",NNX
 "Nuremberg, Germany ",NUE
-"Nuremberg, Germany - Rail service ",ZAQ
 "Nuuk, Greenland ",GOH
 "Nyala, Sudan ",UYL
 "Nyaung, Myanmar ",NYU
@@ -2387,7 +2317,6 @@ New London/Groton ,GON
 "Ostersund, Sweden ",OSD
 "Ostrava, Czech Republic ",OSR
 "Ottawa, ON - International ",YOW
-"Ottawa, ON - Rail service ",XDS
 "Ottumwa, IA ",OTM
 "Otu, Colombia ",OTU
 "Ouagadougou, Burkina Faso ",OUA
@@ -2443,13 +2372,11 @@ New London/Groton ,GON
 "Paramaribo, Suriname - Zorg En Hoop ",ORG
 "Parana, ER, Argentina ",PRA
 "Parasi, Solomon Islands ",PRS
-"Parent, QC - Rail service ",XFE
 "Paris, France - All airports ",PAR
 "Paris, France - Beauvais-Tille ",BVA
 "Paris, France - Charles Degaulle ",CDG
 "Paris, France - Orly ",ORY
 "Parkersburg, WV/Marietta, OH ",PKB
-"Parksville, BC - Rail service ",XPB
 "Parma/Milan, Italy ",PMF
 "Parnaiba, PI, Brazil ",PHB
 "Paro, Bhutan ",PBH
@@ -2481,7 +2408,6 @@ New London/Groton ,GON
 "Penticton, BC ",YYF
 "Penzance, United Kingdom ",PZE
 "Peoria, IL ",PIA
-"Perce, QC - Rail service ",XFG
 "Pereira, Colombia ",PEI
 "Perigueux, France ",PGX
 "Perito Moreno, SC, Argentina ",PMQ
@@ -2534,10 +2460,8 @@ New London/Groton ,GON
 "Point Lay, AK ",PIZ
 "Pointe Noire, Congo ",PNR
 "Pointe-a-Pitre, Guadeloupe ",PTP
-"Pointe-aux-Trembles, QC - Rail service ",XPX
 "Points North Landing, SK ",YNL
 "Poitiers, France - Biard ",PIS
-"Poitiers, France - Rail service ",XOP
 "Pokhara, Nepal ",PKR
 "Poltava, Ukraine ",PLV
 "Polyarnyj, Russia ",PYJ
@@ -2603,15 +2527,12 @@ New London/Groton ,GON
 "Praia, Cape Verde ",RAI
 "Pres. Roque Saenz Pena, CH, Argentina ",PRQ
 "Prescott, AZ ",PRC
-"Prescott, ON - Rail service ",XII
 "Presidente Prudente, SP, Brazil ",PPB
 "Presque Isle, ME ",PQI
 "Preveza/Lefkas, Greece ",PVK
 "Prince Albert, SK ",YPA
 "Prince George, BC ",YXS
-"Prince George, BC - Rail service ",XDV
 "Prince Rupert, BC - Digby Island Airport ",YPR
-"Prince Rupert, BC - Rail service ",XDW
 "Princeton, WV ",BLF
 "Pristina, Serbia and Montenegro ",PRN
 "Proserpine, QL, Australia ",PPP
@@ -2657,11 +2578,7 @@ New London/Groton ,GON
 "Qiqihar, China ",NDG
 "Qualicum, BC ",XQU
 "Quaqtaq, QC ",YQC
-"Quebec, QC - Charny Rail service ",YFZ
 "Quebec, QC - International Airport ",YQB
-"Quebec, QC - Levis Rail service ",XLK
-"Quebec, QC - Quebec Station Rail service ",XLJ
-"Quebec, QC - Sainte-Foy Rail service ",XFY
 "Queenstown, New Zealand ",ZQN
 "Quelimane, Mozambique ",UEL
 "Quepos, Costa Rica ",XQP
@@ -2743,7 +2660,6 @@ New London/Groton ,GON
 "Riohacha, Colombia ",RCH
 "Rishiri, Japan ",RIS
 "Riverton, WY ",RIW
-"Riviere-a-Pierre, QC - Rail service ",XRP
 "Riyadh, Saudi Arabia ",RUH
 "Riyan Mukalla, Yemen ",RIY
 "Roane, France ",RNE
@@ -2756,8 +2672,6 @@ New London/Groton ,GON
 "Rochester, NY ",ROC
 "Rock Sound, Bahamas ",RSD
 "Rock Springs, WY ",RKS
-"Rockford, IL - Park&Ride Bus ",ZRF
-"Rockford, IL - Van Galder Bus ",ZRK
 "Rockhampton, QL, Australia ",ROK
 "Rockland, ME ",RKD
 "Rodez, France ",RDZ
@@ -2793,14 +2707,12 @@ New London/Groton ,GON
 "Saarbruecken, Germany ",QFZ
 "Sachigo Lake, ON ",ZPB
 "Sachs Harbour, NT ",YSY
-"Sackville, NB - Rail service ",XKV
 "Sacramento, CA ",SMF
 "Saginaw, MI ",MBS
 "Saint Cloud, MN ",STC
 "Saint Croix, U.S. Virgin Islands ",STX
 "Saint George Island, AK ",STG
 "Saint George, UT ",SGU
-"Saint Hyacinthe, QC - Rail service ",XIM
 "Saint John, NB ",YSJ
 "Saint Johns, NL ",YYT
 "Saint Leonard, NB ",YSL
@@ -2899,7 +2811,6 @@ New London/Groton ,GON
 "Saratov, Russia ",RTW
 "Sarmi, Indonesia ",ZRM
 "Sarnia, ON ",YZR
-"Sarnia, ON - Rail service ",XDX
 "Saskatoon, SK ",YXE
 "Satu Mare, Romania ",SUJ
 "Satwag, Papua New Guinea ",SWG
@@ -2925,7 +2836,6 @@ New London/Groton ,GON
 "Selje, Norway ",QFK
 "Semarang, Indonesia ",SRG
 "Senggo, Indonesia ",ZEG
-"Senneterre, QC - Rail service ",XFK
 "Seoul, South Korea - All Airports ",SEL
 "Seoul, South Korea - Gimpo International ",GMP
 "Seoul, South Korea - Incheon International ",ICN
@@ -2941,8 +2851,6 @@ New London/Groton ,GON
 "Shannon, Ireland ",SNN
 "Shantou, China ",SWA
 "Sharm El Sheikh, Egypt ",SSH
-"Shawinigan, QC - Rail service ",XFL
-"Shawnigan, BC - Rail service ",XFM
 "Sheffield, United Kingdom ",SZD
 "Sheffield/Florence/Muscle Shoals, AL ",MSL
 "Sheldon Point, AK ",SXP
@@ -3010,7 +2918,6 @@ New London/Groton ,GON
 "St Catharines, ON ",YCM
 "St Denis de la Reunion, Reunion ",RUN
 "St Kitts, St Kitts and Nevis ",SKB
-"St Marys, ON - Rail service ",XIO
 "St Petersburg/Clearwater, FL ",PIE
 "St Pierre, St Pierre and Miquelon ",FSP
 "St Vincent, Saint Vincent and the Grenadines ",SVD
@@ -3042,17 +2949,13 @@ New London/Groton ,GON
 "Stony River, AK ",SRV
 "Stornoway, United Kingdom ",SYY
 "Storuman, Sweden ",SQO
-"Strasbourg, France - Bus service ",XER
 "Strasbourg, France - Entzheim ",SXB
-"Strathroy, ON - Rail service ",XTY
 "Stronsay, United Kingdom ",SOY
 "Stung Treng, Cambodia ",TNX
 "Stuttgart, Germany - Echterdingen ",STR
-"Stuttgart, Germany - Rail service ",ZWS
 "Suavanao, Solomon Islands ",VAO
 "Sucre, Bolivia ",SRE
 "Sudbury, ON ",YSB
-"Sudbury, ON - Rail service ",XDY
 "Sue Island, QL, Australia ",SYU
 "Sui, Pakistan ",SUL
 "Sukhotthai, Thailand ",THS
@@ -3167,7 +3070,6 @@ New London/Groton ,GON
 "Thargomindah, QL, Australia ",XTG
 "The Bight, Bahamas ",TBI
 "The Pas, MB ",YQD
-"The Pas, MB - Rail service ",XDZ
 "Thessaloniki, Greece ",SKG
 "Thicket Portage, MB ",YTD
 "Thief River Falls, MN ",TVF
@@ -3223,8 +3125,6 @@ New London/Groton ,GON
 "Tongoa, Vanuatu ",TGH
 "Toowoomba, QL, Australia ",TWB
 "Topeka, KS ",FOE
-"Toronto, ON - Downtown Rail service ",YBZ
-"Toronto, ON - Guildwood Rail service ",XLQ
 "Toronto, ON - International ",YYZ
 "Toronto, ON - Toronto Island Airport ",YTZ
 "Torp Airport Oslo, Norway - Sandefjord ",TRF
@@ -3239,7 +3139,6 @@ New London/Groton ,GON
 "Toulon, France ",TLN
 "Toulouse, France ",TLS
 "Tours, France ",TUF
-"Tours, France - Rail service ",XSH
 "Townsville, QL, Australia ",TSV
 "Toyama, Japan ",TOY
 "Tozeur, Tunisia ",TOE
@@ -3262,7 +3161,6 @@ New London/Groton ,GON
 "Trujillo, Honduras ",TJI
 "Trujillo, Peru ",TRU
 "Truk, Micronesia ",TKK
-"Truro, NS - Rail service ",XLZ
 "Tsaratanana, Madagascar ",TTS
 "Tsiroanomandidy, Madagascar ",WTS
 "Tsumeb, Namibia ",TSB
@@ -3349,7 +3247,6 @@ New London/Groton ,GON
 "Vadodara, India ",BDQ
 "Vadso, Norway ",VDS
 "Vail, CO - Eagle County Airport ",EGE
-"Vail, CO - Van service ",QBF
 "Valdez, AK ",VDZ
 "Valdivia, Chile ",ZAL
 "Val-d'Or, QC ",YVO
@@ -3367,7 +3264,6 @@ New London/Groton ,GON
 "Vancouver, BC ",YVR
 "Vancouver, BC - Coal Harbour ",CXH
 "Vancouver, BC - International ",YVR
-"Vancouver, BC - Rail service ",XEA
 "Vanimo, Papua New Guinea ",VAI
 "Vanuabalavu, Fiji ",VBV
 "Varadero, Cuba ",VRA
@@ -3456,7 +3352,6 @@ Washington DC - National ,DCA
 "Waterloo, IA ",ALO
 "Watertown, NY ",ART
 "Watertown, SD ",ATY
-"Watford, ON - Rail service ",XWA
 "Wau, Papua New Guinea ",WUG
 "Wau, Sudan ",WUU
 "Wausau/Stevens Point, WI ",CWA
@@ -3478,7 +3373,6 @@ Washington DC - National ,DCA
 "Westray, United Kingdom ",WRY
 "Westsound, WA ",WSX
 "Wewak, Papua New Guinea ",WWK
-"Weymont, QC - Rail service ",XFQ
 "Wha Ti/Lac La Martre, NT ",YLE
 "Whakatane, New Zealand ",WHK
 "Whale Cove, NU ",YXN
@@ -3504,15 +3398,12 @@ Washington DC - National ,DCA
 "Windarra, QL, Australia ",WNR
 "Windsor Locks, CT ",BDL
 "Windsor, ON ",YQG
-"Windsor, ON - Rail service ",XEC
 "Winnipeg, MB - International ",YWG
-"Winnipeg, MB - Rail service ",XEF
 "Winton, QL, Australia ",WIN
 "Woja, Marshall Islands ",WJA
 "Wollaston Lake, SK ",ZWL
 "Wonan, Taiwan ",WOT
 "WonJu, South Korea ",WJU
-"Woodstock, ON - Rail service ",XIP
 "Worcester, MA ",ORH
 "Worland, WY ",WRL
 "Wotho Island, Marshall Islands ",WTO
@@ -3524,7 +3415,6 @@ Washington DC - National ,DCA
 "Wunnummin Lake, ON ",WNN
 "Wuyishan, China ",WUS
 "Wyndham, WA, Australia ",WYN
-"Wyoming, ON - Rail service ",XWY
 "Xi An, China - Xianyang ",XIY
 "Xiamen, China ",XMN
 "Xiangfan, China ",XFN
