@@ -3,10 +3,4 @@
   The time is now: <%= Time.now %>
 </p>
 
-<% if @city %>
-<h2>Leaving from <%= @city %></h2>
-<% else %>
-<p>Insert city</p>
-<% end %>
-
 <%= render "search_results/form" %>
