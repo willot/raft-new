@@ -26,4 +26,3 @@ class SearchResultsController < ApplicationController
   end
 end
 
-
