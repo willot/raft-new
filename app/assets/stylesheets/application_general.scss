@@ -1,0 +1,84 @@
+body {
+  background-color: #000;
+}
+
+/*HEADER*/
+
+  header {
+    display: block;
+    postition: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-image: asset-data-url("bokehskyline.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+    margin: auto;
+    color: #fff;
+
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+  }
+
+  header h1 {
+    padding-left: 3em;
+  }
+
+/*NAVIGATION*/
+  nav {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  nav li {
+    display: inline;
+    padding: 2em;
+    line-height: 3em;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #FFF;
+  }
+
+  nav a:hover {
+    color: #ED4726;
+  }
+
+  nav ul, nav h1{
+      margin: 0px;
+      padding: 0px;
+  }
+
+
+.standard_box {
+  width: 50%;
+  min-height: 500px;
+  position: absolute;
+
+  background: -moz-linear-gradient(top,  rgba(138,223,226,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(138,223,226,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(138,223,226,0.60) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(138,223,226,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(138,223,226,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(138,223,226,0.95) 0%,rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a68adfe2', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+  margin-top: -250px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  padding: 10px;
+
+
+  border-radius: 10px;
+
+  text-align: center;
+}

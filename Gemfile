@@ -33,6 +33,8 @@ gem 'rails_12factor', group: :production
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# geolocation gems
 gem 'geokit'
 
 #Carrierwave gems

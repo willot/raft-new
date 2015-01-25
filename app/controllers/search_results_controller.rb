@@ -2,6 +2,8 @@ require 'momondo/client.rb'
 require 'Date'
 
 class SearchResultsController < ApplicationController
+  before_action :set_search_result, only: [:user_index]
+
   def index
   end
 
@@ -22,6 +24,9 @@ class SearchResultsController < ApplicationController
   end
 
   private
+  def set_search_result
+    @results = current_user.search_results
+  end
 
   def search_result_params
    params.require(:search_result).permit(:current_city, :budget, :start_at, :end_at)
