@@ -1,7 +1,9 @@
 <%= form_for @search_result do |f| %>
   <%= f.label "City" %>
   <%= f.text_field :current_city, value: @city %><br>
-   <%= f.label "Max budget" %>
+  <%= f.label "Max budget" %>
   <%= f.text_field :budget %><br>
+  <%= f.label "When do you want to leave?"%>
+  <%= f.date_select :start_at %>
   <%= f.submit "Send me somewhere" %>
 <% end %>
