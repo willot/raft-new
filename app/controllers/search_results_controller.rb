@@ -32,7 +32,7 @@ class SearchResultsController < ApplicationController
    params.require(:search_result).permit(:current_city, :budget, :start_at, :end_at)
   end
 
-  def convert_city_to_airport(current_city)
+  def convert_city_to_airport(current_city)#this method convert the city into airport code
    Location.find_by(city: current_city).airports.first.code
   end
 end
