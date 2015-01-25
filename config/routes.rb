@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
 
+  resources :trips
+
   resources :users
   root "search_results#new"
 
