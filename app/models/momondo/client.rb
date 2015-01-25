@@ -29,15 +29,12 @@ module Momondo
 
     def results_from(data)
       data = Hash.from_xml(data.to_s)
-      p data
       results = data['Envelope']['Body']['WhereToGoResponse']['WhereToGoResult']['WhereToGoResult']
       results.map {|r| Momondo::Result.new(Hash[r.map {|k,v| [k.underscore.to_sym, v]}]) }
     end
   end
 end
 
-client = Momondo::Client.new
-results = client.where_to_go(leave_from: "LAX", max_price: 2000, leave_date: '05/07/2015')
-puts
-puts
-p results
+# client = Momondo::Client.new
+# results = client.where_to_go(leave_from: "LAX", max_price: 2000, leave_date: '05/07/2015')
+
