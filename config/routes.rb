@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
+  root "search_results#new"
 
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
 
   resources :trips
-
   resources :users
-  root "search_results#new"
 
+  get '/user_searches' => 'search_results#user_index'
   get '/search_results' => 'search_results#index'
   post '/search_results' => 'search_results#create'
 
