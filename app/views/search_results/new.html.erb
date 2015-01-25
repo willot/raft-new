@@ -1,8 +1,5 @@
-<header>
-  <h1>Welcome</h1>
-</header>
-<%= @message if @message %>
-<div class="search_box">
+<div class="standard_box">
+  <%= @message if @message %>
   <% if @city %>
     <h2>Leaving from <%= @city %></h2>
   <% else %>

@@ -1,0 +1,70 @@
+body {
+  background-color: #000;
+}
+
+/*HEADER*/
+
+  header {
+    display: block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(bokehskyline.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    margin: auto;
+    color: #fff;
+  }
+
+  header h1 {
+    padding-left: 3em;
+  }
+
+/*NAVIGATION*/
+  nav {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  nav li {
+    display: inline;
+    padding: 2em;
+    line-height: 3em;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #FFF;
+
+  }
+
+  nav ul, nav h1{
+      margin: 0px;
+      padding: 0px;
+  }
+
+
+.standard_box {
+  width: 50%;
+
+  margin: 0 auto;
+  margin-top: -50px;
+  padding: 5px;
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=62)";
+  filter: alpha(opacity=62);
+  -moz-opacity: 0.62;
+  -khtml-opacity: 0.62;
+  opacity: 0.80;
+  background-color: #a1d3dd;
+  border-radius: 10px;
+
+  text-align: center;
+}
