@@ -1,10 +1,4 @@
 <div class="standard_box">
-  <%= @message if @message %>
-  <% if @city %>
-    <h2>Leaving from <%= @city %></h2>
-  <% else %>
-    <p>Choose city</p>
-  <% end %>
   <%= render "search_results/form" %>
 </div>
 
