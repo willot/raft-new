@@ -28,6 +28,6 @@ class User < ActiveRecord::Base
     :too_short => "You need at least 6 characters",
     :too_long => "You are limited to 20 characters"
 
-  mount_uploader :avatar, AvatarUploader
+  # mount_uploader :avatar, AvatarUploader
   has_secure_password
 end
