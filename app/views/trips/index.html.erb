@@ -1,8 +1,13 @@
 <div class="standard_box">
-  <h1> Trips </h1>
-  <% @trips.each do |trip| %>
-    <div class="trips_list">
-      <h3><%=trip.origin.city %><h3>
-    </div>
+  <% if @trips.count != 0 %>
+      <h1> Trips </h1>
+    <% @trips.each do |trip| %>
+      <div class="trips_list">
+        <h3><%= link_to trip.origin.city, trip_path(id: trip.id) %><h3>
+        <h4>From <%= trip.start_at %> to <%= trip.end_at %></h4>
+      </div>
+    <% end %>
+  <% else %>
+    <h1> You don't have any Trips </h1>
   <% end %>
 </div>

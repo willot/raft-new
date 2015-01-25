@@ -1,5 +1,5 @@
 class TripsController < ApplicationController
-  #before_action: :set_trip, only: [:show, :update, :destroy, :edit]
+  before_action :set_trip, only: [:show, :update, :destroy, :edit]
 
   def index
     if current_user
