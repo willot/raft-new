@@ -1,3 +1,5 @@
+require 'momondo/client.rb'
+
 class SearchResultsController < ApplicationController
   def index
   end
@@ -11,6 +13,10 @@ class SearchResultsController < ApplicationController
 
   def create
    @search_result = SearchResult.new(search_result_params)
+   @client = Momondo::Client.new
+   @results = @client.where_to_go(leave_date: '05/07/2015',leave_from: "LAX", max_price: @search_result.budget )
+
+   render "search_results/index"
   end
 
   private
