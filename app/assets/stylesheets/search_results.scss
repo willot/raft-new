@@ -1,3 +1,15 @@
 // Place all the styles related to the search_results controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+header {
+  display: block;
+  width: 100%;
+  background-image: url(bokehskyline.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 300px;
+  text-align: center;
+  margin: auto;
+  color: #fff;
+}
