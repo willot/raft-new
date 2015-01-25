@@ -1,1 +1,8 @@
-USER TRIPS
+<div class="standard_box">
+  <h1> Trips </h1>
+  <% @trips.each do |trip| %>
+    <div class="trips_list">
+      <h3><%=trip.origin.city %><h3>
+    </div>
+  <% end %>
+</div>
