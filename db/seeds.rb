@@ -5,7 +5,6 @@ CSV.foreach("#{Rails.root}/lib/data/airportcodes.csv", headers: false) do |row|
     city = row[0].split(',')
     location = Location.create!(city: city[0].downcase, country: city[1])
     Airport.create!(code: row[1], location: location)
-    # airport.location.create!(city: city[0].downcase, country: city[1])
 end
 
 users = 20.times.map do
