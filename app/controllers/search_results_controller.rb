@@ -23,7 +23,7 @@ class SearchResultsController < ApplicationController
 
   private
   def set_search_result
-    @results = SearchResult.find_by(user_id: params[:id])
+    @results = current_user.search_results
   end
 
   def search_result_params
