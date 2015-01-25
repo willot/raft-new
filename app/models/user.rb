@@ -13,8 +13,8 @@ class User < ActiveRecord::Base
   has_many :search_result_locations, through: :search_results
   has_many :searched_locations, through: :search_result_locations, source: :location
 
-  has_many :created_messages, class_name: "Messages", source: :creator
-  has_many :recieved_messages, class_name: "Messages", source: :recipient
+  has_many :created_messages, class_name: "Message", foreign_key: :creator_id
+  has_many :recieved_messages, class_name: "Message", foreign_key: :recipient_id
 
   validates :username, uniqueness: true, presence: true
   validates :email, uniqueness: true, presence: true

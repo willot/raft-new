@@ -5,7 +5,7 @@ class CreateMessages < ActiveRecord::Migration
       t.text :content
       t.datetime :wrote_at
       t.references :creator
-      t.referencea :recipient
+      t.references :recipient
 
       t.timestamps null: false
     end
