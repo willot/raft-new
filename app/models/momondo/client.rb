@@ -1,4 +1,5 @@
 require 'savon'
+require 'date'
 
 module Momondo
   class Client
