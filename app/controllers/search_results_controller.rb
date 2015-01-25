@@ -1,5 +1,4 @@
 require 'momondo/client.rb'
-require 'Date'
 
 class SearchResultsController < ApplicationController
   before_action :set_search_result, only: [:user_index]
