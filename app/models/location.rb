@@ -16,7 +16,6 @@ class Location < ActiveRecord::Base
   has_many :airports
 
   validates :city, presence: true
-  # validates :country, presence: true
 
   def geo_locate(ip)
     a = Geokit::Geocoders::MultiGeocoder.geocode(ip)
