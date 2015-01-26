@@ -40,13 +40,6 @@ class UsersController < ApplicationController
 
     end
 
-
-    # @guide.location.create(city: )
-
-
-    #   @guide.guide = params_guide
-
-
   private
 
   def user_params
@@ -60,9 +53,5 @@ class UsersController < ApplicationController
   def params_guide
     params.require(:user).permit(:guide)
   end
-
-  # def params_loc
-  #   params.require(:user).permit(:location)
-  # end
 
 end
