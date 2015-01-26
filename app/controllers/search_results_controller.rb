@@ -2,7 +2,8 @@ require 'momondo/client.rb'
 require 'Date'
 
 class SearchResultsController < ApplicationController
-  before_action :set_search_result, only: [:user_index]
+  before_action :set_user_results, only: [:user_index]
+  before_action :set_result, only: [:show]
 
   def index
   end
@@ -22,9 +23,24 @@ class SearchResultsController < ApplicationController
    render "search_results/index"
   end
 
+  def save_result
+    @user = current_user
+    @search = SearchResult.new(params[:results])
+    @search.user_id = @user.id
+    if @search.save
+      redirect_to 'search_results/#{@search.id}'
+    else
+      redirect_to "/"
+    end
+  end
+
   private
-  def set_search_result
+  def set_user_results
     @results = current_user.search_results
+  end
+
+  def set_result
+    @result = SearchResult.find(params[:id])
   end
 
   def search_result_params
