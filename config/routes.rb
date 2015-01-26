@@ -6,7 +6,11 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#destroy'
 
   resources :trips
-  resources :users
+
+  resources :users do
+    resources :messages
+  end
+
   resources :search_results
 
   get '/user_searches' => 'search_results#user_index'
