@@ -22,7 +22,8 @@ end
 #     email: Faker::Internet.email,
 #     password: "password",
 #     bio: Faker::HipsterIpsum.paragraph,
-#     location_id: Location.all.sample.id
+#     guide: [true, false].sample#,
+#     #location_id: Location.all.sample.id
 #     })
 # end
 
@@ -60,13 +61,13 @@ end
 #     })
 # end
 
-messages = 10.times.map do
-    Message.create!({
-        title: Faker::Lorem.word,
-        content: Faker::HipsterIpsum.paragraph,
-        wrote_at: Faker::Time.date,
-        creator_id: users.sample.id,
-        recipient_id: users.sample.id
-        })
-end
+# messages = 10.times.map do
+#     Message.create!({
+#         title: Faker::Lorem.word,
+#         content: Faker::HipsterIpsum.paragraph,
+#         wrote_at: Faker::Time.date,
+#         creator_id: users.sample.id,
+#         recipient_id: users.sample.id
+#         })
+# end
 
