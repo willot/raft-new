@@ -1,0 +1,11 @@
+<div class="standard_box">
+  <h1><%= @loc.city.capitalize %> Guides</h1>
+  <% if @guides.length > 0 %>
+    <% @guides.each do |guide| %>
+      <h2><%= link_to guide.first_name, user_path(guide.id) %></h2><br>
+      <p><%= guide.bio %></p>
+    <% end %>
+  <% else %>
+  <h2>No guides yet for <%= @loc.city %></h2>
+  <% end %>
+</div>
