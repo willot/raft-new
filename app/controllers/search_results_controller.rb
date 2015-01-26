@@ -15,22 +15,35 @@ class SearchResultsController < ApplicationController
   end
 
   def create
-   @search_result = SearchResult.new(search_result_params)
-   airport_code = convert_city_to_airport(@search_result.current_city.downcase)
-   @client = Momondo::Client.new
-   @results = @client.where_to_go(leave_date: @search_result.start_at.to_s ,leave_from: airport_code, max_price: @search_result.budget )
-   render "search_results/index"
+    @search_result = SearchResult.new(search_result_params)
+    airport_code = convert_city_to_airport(@search_result.current_city.downcase)
+    @client = Momondo::Client.new
+    @results = @client.where_to_go(leave_date: @search_result.start_at.to_s ,leave_from: airport_code, max_price: @search_result.budget )
+    session[:previous_search_result] = @results
+    if current_user
+      @search_result.user_id = current_user.id
+    end
+
+    if @search_result.save
+     render "search_results/index"
+    else
+      redirect_to '/'
+    end
   end
 
   def save_result
-    @user = current_user
-    @search = SearchResult.new(params[:results])
-    @search.user_id = @user.id
-    if @search.save
-      redirect_to 'search_results/#{@search.id}'
-    else
-      redirect_to "/"
+    @search_result
+    @results = session[:previous_search_result]
+    p @results
+    @results.each do |result|
+      @search_location = SearchResultLocation.new
+      @converted_location_city = convert_airport_to_city(result.destination)
+      @location = Location.find_by(@converted_location_city)
+      @search_location.location = @location
+      @search_location.search_result = @search_result
+      @search_location.save
     end
+    redirect_to 'search_result/#{@search_result.id}'
   end
 
   private

@@ -19,8 +19,8 @@ Rails.application.routes.draw do
   resources :search_results
   get '/search_results' =>  'search_results#index'
   post '/search_results' => 'search_results#create'
-  get '/user_result' =>     'search_results#new'
-  post '/user_result' =>    'search_results#save_result'
+  get '/save_locations' =>  'search_results#new'
+  post '/save_locations' => 'search_results#save_result'
 
   resources :guides, only: [:index, :new, :create, :show]
 

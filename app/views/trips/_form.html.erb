@@ -1,0 +1,9 @@
+<%= form_for @trip do |f| %>
+  <%= f.hidden_field :origin, value: result.origin %>
+  <%= f.hidden_field :destination, value: result.destination %>
+  <%= f.hidden_field :start_at, value: result.depart_time%>
+  <%= f.hidden_field :end_at, value: result.return_time%>
+  <%= f.hidden_field :user, value: current_user %>
+
+  <%= f.submit "Save Trip" %>
+<% end %>
