@@ -1,7 +1,7 @@
 # encoding: utf-8
-require 'carrierwave'
+# require 'carrierwave'
 
-class AvatarUploader < CarrierWave::Uploader::Base
+#class AvatarUploader #< CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
@@ -9,25 +9,25 @@ class AvatarUploader < CarrierWave::Uploader::Base
 
   # Choose what kind of storage to use for this uploader:
   # storage :file
-   storage :fog
+   # storage :fog
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
-  def store_dir
-    "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
-  end
+  # def store_dir
+  #   "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+  # end
 
-  version :thumb do
-    process :resize_to_fit => [32, 32]
-  end
+  # version :thumb do
+  #   process :resize_to_fit => [32, 32]
+  # end
 
-  version :preview do
-    process :resize_to_fit => [256, 256]
-  end
+  # version :preview do
+  #   process :resize_to_fit => [256, 256]
+  # end
 
-  version :full do
-    process :resize_to_fit => [2048, 2048]
-  end
+  # version :full do
+  #   process :resize_to_fit => [2048, 2048]
+  # end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
@@ -61,4 +61,4 @@ class AvatarUploader < CarrierWave::Uploader::Base
   #   "something.jpg" if original_filename
   # end
 
-end
+# end

@@ -1,9 +1,21 @@
 <div class="standard_box">
   <% @results.each do |result| %>
-    <%= convert_airport_to_city(result.destination) %><br>
-    <%= result.depart_time %><br>
-    <%= result.return_time %><br>
-    <%= result.price%>
-    <br><br>
+    <div class="initial_results">
+      <h1 class="title"><%= convert_airport_to_city(result.destination).capitalize %></h1> <h3>$<%= result.price%></h3>
+      <%= image_tag('temp.jpg') %>
+      <p>From <%= result.depart_time.month %>/<%= result.depart_time.day %>/<%= result.depart_time.year %>
+      To <%= result.return_time.month %>/<%= result.return_time.day %>/<%= result.return_time.year %>
+      <br><br>
+      <span class="button "><%= link_to "Create Trip", new_trip_path%></span>
+      <span class="button "><%= link_to "Book Ticket", 'http://www.momondo.com', :target => "_blank" %></span>
+    </div>
   <% end %>
+</div>
+
+<div class="sidebar">
+  <% if current_user %>
+    <%= link_to "Save Search Results", new_search_result_path%>
+  <% else %>
+    <h3> <%= link_to 'Log In', '/login' %> or <%= link_to 'Sign Up', new_user_path %><br>to save search results </h3>
+  <%end%>
 </div>
