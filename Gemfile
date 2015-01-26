@@ -37,6 +37,9 @@ gem 'rails_12factor', group: :production
 # geolocation gems
 gem 'geokit'
 
+# autocomplete gems
+gem 'rails3-jquery-autocomplete'
+
 #Carrierwave gems
 # gem 'carrierwave'
 # gem 'figaro'
