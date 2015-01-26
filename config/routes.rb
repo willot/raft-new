@@ -14,7 +14,6 @@ Rails.application.routes.draw do
   resources :users
   get '/user_searches' => 'search_results#user_index'
 
-  resources :search_results
   get '/search_results' =>  'search_results#index'
   post '/search_results' => 'search_results#create'
   get '/save_search' =>  'search_results#new'
@@ -22,6 +21,10 @@ Rails.application.routes.draw do
 
   get '/guides/search' => "guides#find_guides"
   resources :guides, only: [:index, :new]
+
+  resources :search_results do
+    get :autocomplete_location_city, :on => :collection
+  end
 
 
   # The priority is based upon order of creation: first created -> highest priority.
