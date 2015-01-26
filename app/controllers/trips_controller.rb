@@ -3,7 +3,8 @@ class TripsController < ApplicationController
 
   def index
     if current_user
-      @trips = current_user.trips
+      @created_trips = current_user.created_trips
+      @joined_trips = current_user.trips
     else
       @trips = Trip.order(:start_at).limit(25)
     end
