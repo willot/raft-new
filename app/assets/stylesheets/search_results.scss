@@ -2,9 +2,35 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/*Index Search Box*/
+/* Inital Search Results Page*/
 
+.initial_results {
+  width: 75%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 10px 10px 30px 10px;
+}
 
+.button {
+  width: 20%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
 
+.button a {
+  text-decoration: none;
+  color: black;
+}
 
+.initial_results img {
+  max-width:95%;
+  display:block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
 
+.initial_results p {
+  margin: 10px;
+}
