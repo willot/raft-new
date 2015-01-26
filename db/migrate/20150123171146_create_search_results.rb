@@ -4,7 +4,7 @@ class CreateSearchResults < ActiveRecord::Migration
       t.references :user
       t.integer    :budget
       t.datetime   :start_at
-      t.datetime   :end_at
+      t.boolean    :visible, :default => false
 
       t.timestamps :null => false
     end

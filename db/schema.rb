@@ -51,9 +51,9 @@ ActiveRecord::Schema.define(version: 20150125222624) do
     t.integer  "user_id"
     t.integer  "budget"
     t.datetime "start_at"
-    t.datetime "end_at"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.boolean  "visible",      default: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
     t.string   "current_city"
   end
 

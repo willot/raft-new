@@ -11,16 +11,14 @@ Rails.application.routes.draw do
     resources :messages
   end
 
-  resources :search_results
-
   resources :users
   get '/user_searches' => 'search_results#user_index'
 
   resources :search_results
   get '/search_results' =>  'search_results#index'
   post '/search_results' => 'search_results#create'
-  get '/user_result' =>     'search_results#new'
-  post '/user_result' =>    'search_results#save_result'
+  get '/save_search' =>  'search_results#new'
+  post '/save_search' => 'search_results#save_result'
 
   get '/guides/search' => "guides#find_guides"
   resources :guides, only: [:index, :new]
