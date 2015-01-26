@@ -49,7 +49,6 @@ end
 #     user_id: users.sample.id,
 #     budget: 1500,
 #     start_at: Faker::Time.date,
-#     end_at: Faker::Time.date,
 #     })
 # end
 

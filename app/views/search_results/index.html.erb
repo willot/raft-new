@@ -31,7 +31,7 @@
 
 <div class="sidebar">
   <% if current_user %>
-    <h3><%= link_to "Save Search Results", save_locations_path(@results, @search_result), :method => :post %></h3>
+    <h3><%= link_to "Save Search Results", save_search_path(search: @search_result.id), method: :post %></h3>
   <% else %>
     <h3> <%= link_to 'Log In', '/login' %> or <%= link_to 'Sign Up', new_user_path %><br>to save search results </h3>
   <%end%>

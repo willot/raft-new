@@ -18,13 +18,19 @@ class SearchResultsController < ApplicationController
     @search_result = SearchResult.new(search_result_params)
     airport_code = convert_city_to_airport(@search_result.current_city.downcase)
     @client = Momondo::Client.new
-    @results = @client.where_to_go(leave_date: @search_result.start_at.to_s ,leave_from: airport_code, max_price: @search_result.budget )
-    session[:previous_search_result] = @results
+    @results = @client.where_to_go(leave_date: @search_result.start_at.to_s ,leave_from: airport_code, max_price: @search_result.budget)
+
     if current_user
       @search_result.user_id = current_user.id
     end
 
     if @search_result.save
+      @results.each do |result|
+        @converted_location_city = convert_airport_to_city(result.destination)
+        @location = Location.find_by(city: @converted_location_city)
+        @search_location = SearchResultLocation.new(location_id: @location.id, search_result_id: @search_result.id)
+        @search_location.save
+      end
      render "search_results/index"
     else
       redirect_to '/'
@@ -32,18 +38,14 @@ class SearchResultsController < ApplicationController
   end
 
   def save_result
-    @search_result
-    @results = session[:previous_search_result]
-    p @results
-    @results.each do |result|
-      @search_location = SearchResultLocation.new
-      @converted_location_city = convert_airport_to_city(result.destination)
-      @location = Location.find_by(@converted_location_city)
-      @search_location.location = @location
-      @search_location.search_result = @search_result
-      @search_location.save
+    @search = SearchResult.find(params[:search])
+    @search.visible = true
+
+    if @search.save
+      redirect_to 'search_results/#{@search.id}'
+    else
+      redirect_to '/'
     end
-    redirect_to 'search_result/#{@search_result.id}'
   end
 
   private
@@ -61,6 +63,12 @@ class SearchResultsController < ApplicationController
 
   def convert_city_to_airport(current_city)#this method convert the city into airport code
    Location.find_by(city: current_city).airports.first.code
+  end
+
+  def convert_airport_to_city(code)
+    if code != nil
+    @destination = Airport.find_by(code: code).location.city
+    end
   end
 end
 
