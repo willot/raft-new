@@ -4,7 +4,7 @@ class SearchResultsController < ApplicationController
   before_action :set_user_results, only: [:user_index]
   before_action :set_result, only: [:show]
 
-  autocomplete :location, :city
+  autocomplete :location, :city, :full => true
 
   def autocomplete_brand_name
 
