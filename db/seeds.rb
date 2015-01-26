@@ -22,9 +22,10 @@ end
 #     email: Faker::Internet.email,
 #     password: "password",
 #     bio: Faker::HipsterIpsum.paragraph,
-#     location_id: Location.all.sample.id
+#     location_id: 589
 #     })
 # end
+#test
 
 # trips = 10.times.map do
 #   Trip.create!({

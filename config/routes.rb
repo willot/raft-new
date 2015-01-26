@@ -20,7 +20,9 @@ Rails.application.routes.draw do
   get '/save_search' =>  'search_results#new'
   post '/save_search' => 'search_results#save_result'
 
-  resources :guides, only: [:index, :new, :create, :show]
+  get '/guides/search' => "guides#find_guides"
+  resources :guides, only: [:index, :new]
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
