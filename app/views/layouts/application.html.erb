@@ -21,6 +21,7 @@
       <ul>
         <li><%= link_to 'Home', '/' %></li>
         <% if current_user%>
+          <li ><%= link_to 'Profile', user_path(current_user.id) %></li>
           <li ><%= link_to 'Trips', trips_path %></li>
           <li><%= link_to 'Searches', user_searches_path(id: current_user.id) %></li>
           <li><%= link_to 'Guides', '/' %></li>

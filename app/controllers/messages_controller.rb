@@ -1,4 +1,10 @@
 class MessagesController < ApplicationController
+  def index
+    @user = current_user
+    @received = @user.received_messages
+    @sent = @user.created_messages
+  end
+
   def new
     @message = Message.new
     @user = User.find(params[:user_id])
