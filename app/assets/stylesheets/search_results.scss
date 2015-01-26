@@ -12,12 +12,25 @@
   padding: 10px 10px 30px 10px;
 }
 
-
- .button {
+.button {
   width: 20%;
+  padding: 20px;
   background-color: #fff;
   border-radius: 5px;
 }
 
+.button a {
+  text-decoration: none;
+  color: black;
+}
 
+.initial_results img {
+  max-width:95%;
+  display:block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
 
+.initial_results p {
+  margin: 10px;
+}

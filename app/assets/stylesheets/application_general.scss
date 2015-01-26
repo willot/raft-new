@@ -2,6 +2,14 @@ body {
   background-color: #000;
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 /*HEADER*/
 
   header {
@@ -88,4 +96,26 @@ label {
   line-height: 2.5em;
 }
 
+
+.sidebar {
+  position: absolute;
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0 5px 5px 0;
+  padding: 30px 0;
+  margin-top: -250px;
+}
+
+.sidebar {
+  padding-left: 10px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #000;
+}
+
+.sidebar h3 {
+  text-align: center;
+
+}
 
