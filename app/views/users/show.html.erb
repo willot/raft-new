@@ -1,3 +1,13 @@
 <div class="standard_box">
-  <h1>Hello <%= current_user.first_name %>!</h1>
+  <h1><%= @user.first_name %>!</h1>
+
+  <% if @user.id == current_user.id %>
+    <%= link_to "Find users/guides", users_path %>
+  <% else %>
+    <%= link_to "Message this person!", new_user_message_path(@user.id) %>
+  <% end %><br>
+
+  <%= flash[:notice] %>
+
+
 </div>
