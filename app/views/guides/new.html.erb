@@ -1,0 +1,12 @@
+<div class="standard_box">
+<%= form_for @guide do |f| %>
+  <%= f.label "Want to become a guide?" %>
+  <%= f.check_box(:guide, {}, true) %>Yes!<br>
+  <%= f.label "In which city ?"%>
+  <%= f.text_field :location, value:"" %><br>
+
+  <%= f.submit "Become a guide" %>
+<% end %>
+</div>
+
+

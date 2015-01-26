@@ -25,12 +25,6 @@ class User < ActiveRecord::Base
     :maximum => 2000,
     :too_long => "You are limited to 2000 characters"
 
-  validates_length_of :password,
-    :minimum => 6,
-    :maximum => 20,
-    :too_short => "You need at least 6 characters",
-    :too_long => "You are limited to 20 characters"
-
   # mount_uploader :avatar, AvatarUploader
   has_secure_password
 end
