@@ -13,9 +13,14 @@ Rails.application.routes.draw do
 
   resources :search_results
 
+  resources :users
   get '/user_searches' => 'search_results#user_index'
-  get '/search_results' => 'search_results#index'
+
+  resources :search_results
+  get '/search_results' =>  'search_results#index'
   post '/search_results' => 'search_results#create'
+  get '/user_result' =>     'search_results#new'
+  post '/user_result' =>    'search_results#save_result'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
