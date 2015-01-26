@@ -18,7 +18,6 @@ class Location < ActiveRecord::Base
   has_many :guides, class_name: "User", foreign_key: "location_id"
 
   validates :city, presence: true
-  # validates :country, presence: true
 
   def geo_locate(ip)
     a = Geokit::Geocoders::MultiGeocoder.geocode(ip)

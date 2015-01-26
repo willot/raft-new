@@ -24,6 +24,22 @@ class UsersController < ApplicationController
     end
   end
 
+
+
+
+  def update
+    @guide = User.find(session[:user_id])
+    @location = Location.find_by(city: (params[:user][:location]).downcase)
+
+    if @location
+      @guide.update(params_guide.merge(location: @location))
+      redirect_to @guide
+    else
+      render 'guides/new'
+    end
+
+    end
+
   private
 
   def user_params
@@ -32,6 +48,10 @@ class UsersController < ApplicationController
 
   def set_user
     @user = User.find(params[:id])
+  end
+
+  def params_guide
+    params.require(:user).permit(:guide)
   end
 
 end
