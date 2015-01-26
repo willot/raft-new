@@ -4,10 +4,11 @@ class SearchResultsController < ApplicationController
   before_action :set_user_results, only: [:user_index]
   before_action :set_result, only: [:show]
 
-  autocomplete :location, :city, :full => true
+  # autocomplete :location, :city, :full => true
 
-  def autocomplete_brand_name
-
+  def autocomplete_location_city
+    cities = Location.where("city ILIKE ?", "%#{params[:term]}%").pluck(:city)
+    render :json => cities
   end
 
   def index
