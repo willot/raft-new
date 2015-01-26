@@ -1,0 +1,16 @@
+<div class="standard_box">
+  <h1>Messages Received</h1>
+  <% @received.each do |message| %>
+  <%= message.title %>
+  <%= message.content %><br>
+  <p>Sent by <%= link_to message.creator.first_name, user_path(message.creator.id) %></p><br>
+  <!-- <p>Sent by <%= message.creator.first_name %></p><br> -->
+  <% end %>
+
+  <h1>Messages Sent</h1>
+  <% @sent.each do |message| %>
+  <%= message.title %>
+  <%= message.content %>
+  <p>Sent to <%= link_to message.recipient.first_name, user_path(message.recipient.id)%></p></br>
+  <% end %>
+</div>
