@@ -1,0 +1,5 @@
+<div class="standard_box">
+  <% @users.each do |user| %>
+  <%= link_to user.first_name, user_path(user.id) %>
+  <% end %>
+</div>
