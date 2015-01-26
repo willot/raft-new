@@ -2,9 +2,8 @@
   <% if @results.count != 0 %>
     <h1> Your Previous Searches </h1>
     <% @results.each do |result| %>
-      <%= result.budget %>
-      <%= result.start_at %>
-      <%= result.end_at %>
+      $<%= result.budget %>
+      From: <%= result.start_at %>
       <% result.locations.each do |location| %>
         <%= location.city %>
         <% end %>

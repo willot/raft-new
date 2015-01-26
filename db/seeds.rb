@@ -26,6 +26,7 @@ end
 #     #location_id: Location.all.sample.id
 #     })
 # end
+#test
 
 # trips = 10.times.map do
 #   Trip.create!({
@@ -50,7 +51,6 @@ end
 #     user_id: users.sample.id,
 #     budget: 1500,
 #     start_at: Faker::Time.date,
-#     end_at: Faker::Time.date,
 #     })
 # end
 

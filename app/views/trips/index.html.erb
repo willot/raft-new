@@ -1,12 +1,21 @@
 <div class="standard_box">
-  <% if @trips.count != 0 %>
-    <% @trips.each do |trip| %>
+  <% if @created_trips.count != 0 %>
+    <h1> Your Created Trips </h1>
+    <% @created_trips.each do |trip| %>
       <div class="trips_list">
-        <h3><%= link_to trip.origin.city, trips_path(id: trip.id) %><h3>
+        <h3><%= link_to trip.destination.city.capitalize, trip_path(id: trip.id) %><h3>
         <h4>From <%= trip.start_at %> to <%= trip.end_at %></h4>
       </div>
     <% end %>
-  <% else %>
-    <h1> You don't have any Trips </h1>
   <% end %>
+
+  <% if @joined_trips.count != 0 %>
+    <h1> Trips You've Joined </h1>
+    <% @joined_trips.each do |trip| %>
+      <div class="trips_list">
+        <h3><%= link_to trip.destination.city.capitalize, trip_path(id: trip.id) %><h3>
+        <h4>From <%= trip.start_at %> to <%= trip.end_at %></h4>
+      </div>
+    <% end %>
+  <%end%>
 </div>

@@ -1,8 +1,11 @@
 <div class="standard_box">
+
   <% @results.each do |result| %>
     <div class="initial_results">
-      <h1 class="title"><%= convert_airport_to_city(result.destination).capitalize %></h1> <h3>$<%= result.price%></h3>
+      <h1 class="title"><%= convert_airport_to_city(result.destination).capitalize %></h1>
+      <h3>$<%= result.price%></h3>
       <%= image_tag('temp.jpg') %>
+
       <p>Leave <%= convert_airport_to_city(result.origin).capitalize %>
         <%= result.depart_time.month %>/<%= result.depart_time.day %>
         /<%= result.depart_time.year %>
@@ -10,9 +13,17 @@
         Leave  <%= convert_airport_to_city(result.destination).capitalize %>
         <%= result.return_time.month %>/<%= result.return_time.day %>
         /<%= result.return_time.year %>
-      </p>
+      </p><br>
+
+      <%= form_for Trip.new do |f| %>
+        <%= f.hidden_field :origin_id, value: Location.find_by(city: convert_airport_to_city(result.origin)).id %>
+        <%= f.hidden_field :destination_id, value: Location.find_by(city: convert_airport_to_city(result.destination)).id %>
+        <%= f.hidden_field :start_at, value: result.depart_time%>
+        <%= f.hidden_field :end_at, value: result.return_time%>
+
+        <%= f.submit "Save Trip" %>
+      <% end %>
       <br>
-      <span class="button "><%= link_to "Create Trip", trips_path(result, :result), method: :post %></span>
       <span class="button "><%= link_to "Book Ticket", 'http://www.momondo.com', :target => "_blank" %></span>
     </div>
   <% end %>
@@ -20,7 +31,7 @@
 
 <div class="sidebar">
   <% if current_user %>
-    <h3><%= link_to "Save Search Results", user_result_path(@search_result, :results), :method => :post %></h3>
+    <h3><%= link_to "Save Search Results", save_search_path(search: @search_result.id), method: :post %></h3>
   <% else %>
     <h3> <%= link_to 'Log In', '/login' %> or <%= link_to 'Sign Up', new_user_path %><br>to save search results </h3>
   <%end%>
