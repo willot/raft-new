@@ -17,9 +17,9 @@ class GuidesController < ApplicationController
         properties: {
           name: location.city,
           available_guides: location.guides.count,
-          :'marker-color' => '#00607d',
-          :'marker-symbol' => 'circle',
-          :'marker-size' => 'medium'
+          :'marker-color' => '##f86767',
+          :'marker-symbol' => 'marker',
+          :'marker-size' => 'large'
         }
       }
     end
