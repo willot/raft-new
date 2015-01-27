@@ -8,7 +8,7 @@ class SearchResultsController < ApplicationController
 
   def autocomplete_location_city
     cities = Location.where("city ILIKE ?", "%#{params[:term]}%").pluck(:city)
-    render :json => cities
+    render :json => cities.map(&:titleize)
   end
 
   def index
