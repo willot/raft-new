@@ -6,3 +6,4 @@ class SearchResult < ActiveRecord::Base
   validates :budget, presence: true
   validates :start_at, presence: true
 end
+

@@ -37,10 +37,14 @@ ActiveRecord::Schema.define(version: 20150127142556) do
     t.text     "content"
     t.datetime "wrote_at"
     t.integer  "creator_id"
-    t.integer  "recipient_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.integer  "messageable_id"
+    t.string   "messageable_type"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
+
+  add_index "messages", ["messageable_id"], name: "index_messages_on_messageable_id", using: :btree
+  add_index "messages", ["messageable_type", "messageable_id"], name: "index_messages_on_messageable_type_and_messageable_id", using: :btree
 
   create_table "search_result_locations", force: :cascade do |t|
     t.integer  "search_result_id"

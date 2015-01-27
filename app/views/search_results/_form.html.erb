@@ -4,7 +4,8 @@
   <%= f.label "I have $" %>
   <%= f.text_field :budget %><br>
   <%= f.label "I'm leaving"%>
-  <%= f.date_select :start_at %><br>
+  <%= f.date_select :start_at, start_year: 2015, discard_day: true, order: [:month, :year] %><br>
+  <%= f.submit "Send me somewhere" %><br><br>
 
-  <%= f.submit "Send me somewhere" %>
+    <%= flash[:error] %>
 <% end %>
