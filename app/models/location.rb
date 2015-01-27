@@ -23,4 +23,12 @@ class Location < ActiveRecord::Base
     a = Geokit::Geocoders::MultiGeocoder.geocode(ip)
     @city = a.city
   end
+
+  def lat=(city)
+    Geokit::Geocoders::GoogleGeocoder.geocode(city).lat
+  end
+
+  def lng=(city)
+    Geokit::Geocoders::GoogleGeocoder.geocode(city).lat
+  end
 end
