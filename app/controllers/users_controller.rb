@@ -1,3 +1,5 @@
+require 'location.rb'
+
 class UsersController < ApplicationController
   before_action :set_user, only: [:show]
 
@@ -33,6 +35,10 @@ class UsersController < ApplicationController
 
     if @location
       @guide.update(params_guide.merge(location: @location))
+      lat = @location.latitude(@location.city)
+      lng = @location.lg(@location.city)
+      @location.update(lat: lat, lng: lng)
+
       redirect_to @guide
     else
       render 'guides/new'

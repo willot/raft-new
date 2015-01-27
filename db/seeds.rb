@@ -1,6 +1,7 @@
 # require 'ffaker'
 require 'csv'
 
+
 CSV.foreach("#{Rails.root}/lib/data/airportcodes.csv", headers: false) do |row|
     city = row[0].split(',')
     existing_location = Location.find_by(city: city[0].downcase)
@@ -8,7 +9,7 @@ CSV.foreach("#{Rails.root}/lib/data/airportcodes.csv", headers: false) do |row|
     if existing_location
         existing_location.airports.create!(code: row[1])
     else
-        location = Location.create!(city: city[0].downcase, country: city[1])
+        location = Location.new(city: city[0].downcase, country: city[1])
         Airport.create!(code: row[1], location: location)
     end
 end
