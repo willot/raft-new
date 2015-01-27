@@ -2,8 +2,6 @@ class GuidesController < ApplicationController
   before_action :guided_locations, only: [:index]
 
   def index
-    @guides = User.where(guide: true)
-
     #For Mapbox
     @geojson = Array.new
     @guided_locations.each do |location|
@@ -12,13 +10,13 @@ class GuidesController < ApplicationController
         type: 'Feature',
         geometry: {
           type: 'Point',
-          coordinate: [41.8369, -87.6847] #[location.lg(location.city), location.latitude(location.city)]
+          coordinates: [rand(1..90), rand(1..90)] #Should Be [location.lat, location.lng]
         },
         properties: {
-          name: location.city,
-          available_guides: location.guides.count,
-          :'marker-color' => '##f86767',
-          :'marker-symbol' => 'marker',
+          title: location.city.capitalize,
+          description: 1,
+          :'marker-color' => '#f86767',
+          :'marker-symbol' => 'circle',
           :'marker-size' => 'large'
         }
       }
@@ -41,10 +39,11 @@ class GuidesController < ApplicationController
 
   def guided_locations
     @guided_locations = []
-    Location.all.each do |location|
-      if location.guides.count != 0
+    guides = User.where(guide: true)
+
+    guides.all.each do |guide|
+        location = guide.location
         @guided_locations << location
-      end
     end
   end
 end

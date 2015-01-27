@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
-  L.mapbox.accessToken = 'pk.eyJ1IjoiamFtYXppbmciLCJhIjoiWm5QaUdZZyJ9.A91w3rJWJ3XWcuyz7kW8GA';
-  var map = L.mapbox.map('map', 'jamazing.l26m1gnb').setView([40, -74.50], 9);
+
 
   $.ajax({
     url: 'guides.json',
@@ -9,10 +8,14 @@ $(document).ready(function() {
     dataType: 'text',
     success: function(data){
       console.log('LOOK AT ME!')
-      //console.log(data)
+      console.log(data)
+
       geojson = $.parseJSON(data)
       console.log(geojson)
-      map.featureLayer.setGeoJSON(geojson)}
+      L.mapbox.accessToken = 'pk.eyJ1IjoiamFtYXppbmciLCJhIjoiWm5QaUdZZyJ9.A91w3rJWJ3XWcuyz7kW8GA';
+      var map = L.mapbox.map('map', 'jamazing.l26m1gnb').setView([40, -74.50], 9);
+      map.featureLayer.setGeoJSON(geojson)
+    }
   });
 })
 
