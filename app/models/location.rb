@@ -11,7 +11,7 @@ class Location < ActiveRecord::Base
   has_many :search_result_locations
   has_many :search_results, through: :search_result_locations
 
-  # has_many :residents, class_name: "User", foreign_key: "location_id"
+  has_many :residents, class_name: "User", foreign_key: "location_id"
 
   has_many :airports
 
@@ -23,4 +23,15 @@ class Location < ActiveRecord::Base
     a = Geokit::Geocoders::MultiGeocoder.geocode(ip)
     @city = a.city
   end
+
+  def latitude(city)
+    Geokit::Geocoders::GoogleGeocoder.geocode(city).lat
+  end
+
+  def lg(city)
+    Geokit::Geocoders::GoogleGeocoder.geocode(city).lng
+  end
 end
+
+
+
