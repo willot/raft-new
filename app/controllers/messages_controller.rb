@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
 
   def index
     @user = current_user
-    @received = @user.received_messages
+    @received = @user.messages
     @sent = @user.created_messages
   end
 
