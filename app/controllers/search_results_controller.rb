@@ -36,7 +36,13 @@ class SearchResultsController < ApplicationController
       return
     else
       airport_code = convert_city_to_airport(@search_result.current_city.downcase)
+      if @results.nil?
+        flash[:error] = "No trips during that time. Search again"
+        render "search_results/new"
+        return
+      else
       @results = @client.where_to_go(leave_date: @search_result.start_at.to_s ,leave_from: airport_code, max_price: @search_result.budget)
+     end
     end
 
     if current_user
