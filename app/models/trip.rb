@@ -6,6 +6,8 @@ class Trip < ActiveRecord::Base
   has_many :travelers
   has_many :confirmed_travelers, through: :travelers, source: :user
 
+  has_many :messages, as: :messageable
+
   validates :origin, presence: true
   validates :destination, presence: true
   validates :start_at, presence: true
