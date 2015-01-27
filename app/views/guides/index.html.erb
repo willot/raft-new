@@ -1,5 +1,10 @@
 <div class="standard_box">
+  <!-- Mapbox Will Go Here -->
   <div id="map-canvas"></div>
+
+  <!-- Testing Mapbox Embeded -->
+  <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/jamazing.l26m1gnb/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiamFtYXppbmciLCJhIjoiWm5QaUdZZyJ9.A91w3rJWJ3XWcuyz7kW8GA'></iframe>
+
   <h1>Find a guide</h1>
   <%= form_tag guides_search_path, method: "get" do %>
   <%= label_tag(:city, "Search by city:") %>
