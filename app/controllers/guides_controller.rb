@@ -12,7 +12,7 @@ class GuidesController < ApplicationController
         type: 'Feature',
         geometry: {
           type: 'Point',
-          coordinate: [41.8369, -87.6847] #change to location.longitude & locatin.latitude when ready
+          coordinate: [41.8369, -87.6847] #[location.lg(location.city), location.latitude(location.city)]
         },
         properties: {
           name: location.city,
