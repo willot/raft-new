@@ -2,10 +2,9 @@
 // All this logic will automatically be available in application.js.
 
 // MAPBOX
-
-  L.mapbox.accessToken = 'pk.eyJ1IjoiamFtYXppbmciLCJhIjoiWm5QaUdZZyJ9.A91w3rJWJ3XWcuyz7kW8GA';
-  var map = L.mapbox.map('map', 'examples.map-i86nkdio')
-      .setView([40, -74.50], 9);
+  // L.mapbox.accessToken = 'pk.eyJ1IjoiamFtYXppbmciLCJhIjoiWm5QaUdZZyJ9.A91w3rJWJ3XWcuyz7kW8GA';
+  // var map = L.mapbox.map('map', 'jamazing.l26m1gnb')
+  //     .setView([40, -74.50], 9);
 
 
 

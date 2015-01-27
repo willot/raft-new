@@ -12,7 +12,7 @@ class GuidesController < ApplicationController
         type: 'Feature',
         geometry: {
           type: 'Point',
-          coordinate: [location.longitude, locaiton.latitude]
+          coordinate: [41.8369, -87.6847] #change to location.longitude & locatin.latitude when ready
         },
         properties: {
           name: location.city,
@@ -22,13 +22,12 @@ class GuidesController < ApplicationController
           :'marker-size' => 'medium'
         }
       }
+    end
 
       respond_to do |format|
         format.html
         format.json { render json: @geojson }
       end
-
-    end
   end
 
   def new
