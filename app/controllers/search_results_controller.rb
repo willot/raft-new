@@ -23,9 +23,21 @@ class SearchResultsController < ApplicationController
 
   def create
     @search_result = SearchResult.new(search_result_params)
-    airport_code = convert_city_to_airport(@search_result.current_city.downcase)
     @client = Momondo::Client.new
-    @results = @client.where_to_go(leave_date: @search_result.start_at.to_s ,leave_from: airport_code, max_price: @search_result.budget)
+    @city_search = Location.where(city: params[:search_result][:current_city])
+
+    if @search_result.current_city.empty? || @city_search.empty?
+      flash[:error] = "City can't be empty"
+      render "search_results/new"
+      return
+    elsif @search_result.budget.nil?
+      flash[:error] = "Budget can't be empty"
+      render "search_results/new"
+      return
+    else
+      airport_code = convert_city_to_airport(@search_result.current_city.downcase)
+      @results = @client.where_to_go(leave_date: @search_result.start_at.to_s ,leave_from: airport_code, max_price: @search_result.budget)
+    end
 
     if current_user
       @search_result.user_id = current_user.id
@@ -38,9 +50,9 @@ class SearchResultsController < ApplicationController
         @search_location = SearchResultLocation.new(location_id: @location.id, search_result_id: @search_result.id)
         @search_location.save
       end
-     render "search_results/index"
-    else
-      redirect_to '/'
+      render "search_results/index"
+    # else
+    #   redirect_to '/'
     end
   end
 
@@ -66,16 +78,16 @@ class SearchResultsController < ApplicationController
 
   def search_result_params
    params.require(:search_result).permit(:current_city, :budget, :start_at, :end_at)
-  end
+ end
 
   def convert_city_to_airport(current_city)#this method convert the city into airport code
    Location.find_by(city: current_city).airports.first.code
-  end
+ end
 
-  def convert_airport_to_city(code)
-    if code != nil
+ def convert_airport_to_city(code)
+  if code != nil
     @destination = Airport.find_by(code: code).location.city
-    end
   end
+end
 end
 

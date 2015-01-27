@@ -20,8 +20,7 @@ class Location < ActiveRecord::Base
   validates :city, presence: true
 
   def geo_locate(ip)
-    a = Geokit::Geocoders::MultiGeocoder.geocode(ip)
-    @city = a.city
+    Geokit::Geocoders::MultiGeocoder.geocode(ip).city
   end
 
   def latitude(city)
