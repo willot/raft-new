@@ -1,5 +1,6 @@
 # require 'ffaker'
 require 'csv'
+require '../app/models/location.rb'
 
 CSV.foreach("#{Rails.root}/lib/data/airportcodes.csv", headers: false) do |row|
     city = row[0].split(',')
