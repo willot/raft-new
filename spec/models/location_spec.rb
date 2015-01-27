@@ -14,6 +14,6 @@ RSpec.describe Location, :type => :model do
     it { expect(location).to have_many(:users) }
     it { expect(location).to have_many(:search_result_locations) }
     it { expect(location).to have_many(:search_results) }
-    it { expect(location).to have_many(:residents)}
+    it { expect(location).to have_many(:guides)}
   end
 end

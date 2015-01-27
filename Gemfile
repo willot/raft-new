@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 # gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -37,10 +38,17 @@ gem 'rails_12factor', group: :production
 # geolocation gems
 gem 'geokit'
 
+# autocomplete gems
+# gem 'rails3-jquery-autocomplete'
+# gem 'rails4-autocomplete'
+
 #Carrierwave gems
 # gem 'carrierwave'
 # gem 'figaro'
 # gem "fog"
+
+#Conversion money
+gem 'goog_currency'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

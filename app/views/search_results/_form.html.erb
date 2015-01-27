@@ -1,6 +1,6 @@
 <%= form_for @search_result do |f| %>
   <%= f.label "I want to leave from" %>
-  <%= f.text_field :current_city, value: @city, include_blank: true %><br>
+  <%= f.text_field :current_city, value: @city, include_blank: true, :"data-autocomplete-path" => autocomplete_location_city_search_results_path, id: 'current-city-text-field' %><br>
   <%= f.label "I have $" %>
   <%= f.text_field :budget %><br>
   <%= f.label "I'm leaving"%>

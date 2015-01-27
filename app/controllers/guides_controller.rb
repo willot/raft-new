@@ -35,7 +35,7 @@ class GuidesController < ApplicationController
   end
 
   def find_guides
-    @loc = Location.find_by(city: params[:city])
+    @loc = Location.find_by(city: params[:city].downcase)
     @guides = @loc.guides
   end
 
