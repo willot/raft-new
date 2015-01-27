@@ -1,3 +1,5 @@
 <div class="standard_box">
   <h1><%= @trip.origin.city.capitalize %> to <%= @trip.destination.city.capitalize %></h1>
+
+  <%= link_to "Write a post", new_trip_message_path(@trip.id) %>
 </div>
