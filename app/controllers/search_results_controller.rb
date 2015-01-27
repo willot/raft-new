@@ -4,8 +4,6 @@ class SearchResultsController < ApplicationController
   before_action :set_user_results, only: [:user_index]
   before_action :set_result, only: [:show]
 
-  # autocomplete :location, :city, :full => true
-
   def autocomplete_location_city
     cities = Location.where("city ILIKE ?", "%#{params[:term]}%").pluck(:city)
     render :json => cities.map(&:titleize)
@@ -68,7 +66,7 @@ class SearchResultsController < ApplicationController
    params.require(:search_result).permit(:current_city, :budget, :start_at, :end_at)
   end
 
-  def convert_city_to_airport(current_city)#this method convert the city into airport code
+  def convert_city_to_airport(current_city)
    Location.find_by(city: current_city).airports.first.code
   end
 
