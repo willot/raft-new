@@ -1,18 +1,36 @@
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="fb-root"></div>
+
+
 <div id="trip_map">
   <h1 id="trip_title">From <%= @trip.origin.city.capitalize %> to <%= @trip.destination.city.capitalize %></h1>
 </div>
 
   <div id="content">
+   <%= button_to "Book it!", nil, {class: "book"} %>
     <div id="trip_creator"></div>
     <div id="description"><!--<%= @trip.description %>-->I grew up in Chicago and left when I was 18. I lived in Seattle, Minneapolis, Romania, and then settled back here in Chicago and finished College. I have a Masters Degree in Social Work and love my job. I enjoy going to shows, eating healthy, and working out. I love going out and I love wine.</div>
+
     <!--- insert link to trip on momondo -->
-    <%= link_to "Book it!", nil, {:class => "book"} %>
-      <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+
+  <div class="button-nav">
+   <ul>
+    <li><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></li>
+    <li><div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-width="24px" data-layout="button"></div></li>
+  </ul>
+</div>
+
 
   </div>
 
 
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
 
