@@ -73,6 +73,11 @@ end
 #     })
 # end
 
+# messageable = [trips, users].flatten
+# 40.times.map do
+#   messageable.sample.messages.create!(title: Faker::Lorem.word,content: Faker::HipsterIpsum.paragraph,wrote_at: Faker::Time.date, creator_id: users.sample.id,)
+# end
+
 # messages = 10.times.map do
 #     Message.create!({
 #         title: Faker::Lorem.word,

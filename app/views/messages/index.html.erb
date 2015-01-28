@@ -9,8 +9,10 @@
 
   <h1>Messages Sent</h1>
   <% @sent.each do |message| %>
-  <%= message.title %>
-  <%= message.content %>
-  <p>Sent to <%= link_to message.recipient.first_name, user_path(message.recipient.id)%></p></br>
+  <% if message.messageable_type == "User" %>
+    <%= message.title %>
+    <%= message.content %>
+    <p>Sent to <%= link_to message.messageable.first_name, user_path(message.messageable.id) %></p></br>
+    <% end %>
   <% end %>
 </div>

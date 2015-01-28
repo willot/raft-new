@@ -1,5 +1,5 @@
 <div class="standard_box">
-  <%= form_for @message, url: {action: "create"} do |f| %>
+  <%= form_for [@trip, @creator, @message], url: {action: "create"} do |f| %>
     <%= f.label "title" %>
     <%= f.text_field :title %><br>
     <%= f.label "content" %>
