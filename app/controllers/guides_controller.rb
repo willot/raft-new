@@ -10,7 +10,7 @@ class GuidesController < ApplicationController
         type: 'Feature',
         geometry: {
           type: 'Point',
-          coordinates: [rand(1..90), rand(1..90)] #Should Be [location.lat, location.lng]
+          coordinates: [location.lng, location.lat]
         },
         properties: {
           title: location.city.capitalize,

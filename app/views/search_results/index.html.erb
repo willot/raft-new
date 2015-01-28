@@ -1,8 +1,9 @@
 
 
-<div class="standard_box">
+<div class="wrapper">
   <% @results.each do |result| %>
-    <div class="initial_results">
+
+    <div class="result-card">
       <h1 class="title"><%= convert_airport_to_city(result.destination).capitalize %></h1>
       <h3>$<%= GoogCurrency.eur_to_usd(result.price).to_i%></h3>
       <%= image_tag('temp.jpg') %>
@@ -23,9 +24,6 @@
         <%= f.hidden_field :end_at, value: result.return_time%>
 
         <%= f.submit "Save Trip" %>
-            <br>
-            <br>
-            <br>
       <% end %>
 
       <span class="button "><%= link_to "Book Ticket", momondo_url(result), :target => "_blank" %></span>
