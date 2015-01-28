@@ -36,7 +36,7 @@ class UsersController < ApplicationController
     if @location
       @guide.update(params_guide.merge(location: @location))
       lat = @location.latitude(@location.city)
-      lng = @location.lg(@location.city)
+      lng = @location.longitude(@location.city)
       @location.update(lat: lat, lng: lng)
 
       redirect_to @guide
