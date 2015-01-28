@@ -22,6 +22,7 @@
     padding: 10px;
     background-color: #8e8e8e;
     opacity:0.6;
+    z-index: 1;
   }
 
   nav ul {
@@ -39,7 +40,7 @@
   }
 
   nav a:hover {
-    color: #ED4726;
+    color: #d12929;
   }
 
   nav ul, nav h1{
@@ -49,7 +50,7 @@
 
 .standard_box {
   width: 50%;
-  min-height: 500px;
+  min-height: 350px;
   position: relative;
   margin-top: 250px;
   margin-left: auto;
@@ -106,8 +107,8 @@ label {
 
 /* background image */
 
-body {
-  positition: absolute;
+#background {
+  position: absolute;
   width: 100%;
   height: 100%;
   bottom: 0;
@@ -116,5 +117,5 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: -1;
+  z-index: -2;
 }
