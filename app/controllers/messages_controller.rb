@@ -11,16 +11,30 @@ class MessagesController < ApplicationController
 
   def new
     @message = Message.new
+    render partial: 'form'
   end
 
   def create
     @message = Message.new(message_params)
     if @message.save
       if @trip
-        redirect_to @trip, notice: "Your message has been sent!"
+            redirect_to @trip ,notice: "Message sent!"
       else
-        redirect_to @receiver, notice: "Your message has been sent!"
+            redirect_to @receiver, notice: "Message sent!"
       end
+      # if request.xhr?
+      #   if @trip
+      #     render @trip , layout: false
+      #   else
+      #     redirect_to @receiver, layout: false
+      #   end
+      # else
+      #   if @trip
+      #       redirect_to @trip ,notice: "Message sent!"
+      #   else
+      #       redirect_to @receiver, notice: "Message sent!"
+      #   end
+      # end
     else
       render 'new'
     end
