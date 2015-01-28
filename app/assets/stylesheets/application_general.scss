@@ -17,7 +17,7 @@
 
 /*NAVIGATION*/
   nav {
-    text-align: center;
+    text-align: right;
     margin: 0px;
     padding: 10px;
     background-color: #8e8e8e;
@@ -40,30 +40,13 @@
   }
 
   nav a:hover {
-    color: #d12929;
+    color: #FFF;
   }
 
   nav ul, nav h1{
       margin: 0px;
       padding: 0px;
   }
-
-.standard_box {
-  width: 50%;
-  min-height: 350px;
-  position: relative;
-  margin-top: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-  z-index: 1;
-}
 
 input[type="text"], {
   border:none;
@@ -79,7 +62,6 @@ label {
   font-size: 2em;
   line-height: 2.5em;
 }
-
 
 .sidebar {
   position: absolute;
