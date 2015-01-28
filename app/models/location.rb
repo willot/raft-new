@@ -25,7 +25,7 @@ class Location < ActiveRecord::Base
     Geokit::Geocoders::GoogleGeocoder.geocode(city).lat
   end
 
-  def lg(city)
+  def longitude(city)
     Geokit::Geocoders::GoogleGeocoder.geocode(city).lng
   end
 end
