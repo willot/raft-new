@@ -1,9 +1,17 @@
 <div class="standard_box">
+  <div id="title_label_message">
   <%= form_for [@trip, @creator, @message], url: {action: "create"} do |f| %>
-    <%= f.label "title" %>
-    <%= f.text_field :title %><br>
-    <%= f.label "content" %>
-    <%= f.text_area :content %><br>
-    <%= f.submit "Send Message" %>
+    <div class="input-field">
+      <%= f.label "title" %>
+      <%= f.text_field :title  %><br>
+    </div>
+    <div class="input-field">
+      <%= f.label "content" %>
+      <%= f.text_area :content, id:'title-text-field' %><br>
+    </div>
+    <div class='buttons'>
+      <%= f.submit "Send Message" %>
+    </div>
   <% end %>
+  </div>
 </div>
