@@ -2,10 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-* {
-  border: 1px solid black;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -33,7 +29,7 @@ body {
 }
 
 #content {
- width: 50%;
+  width: 50%;
   min-height: 350px;
   position: relative;
   margin-top: 400px;
@@ -57,9 +53,14 @@ body {
   height: 15em;
   width: 15em;
   margin-left: 3em;
-  margin-top: 3em;
   border-radius: 10%;
   background-image: url("http://www.theschulhofcenter.com/wp-content/uploads/2014/09/woman_smiling.jpg")
+}
+
+#trip_creator h1 {
+  margin-top: 10%;
+  color: #65b7c4;
+  padding-top: 90%;
 }
 
 #description {
@@ -78,7 +79,7 @@ padding-right: 3%;
 .button_to {
   height: 3em;
   float: right;
-  .book {
+  .book, .join-trip {
     width: 130px;
     height: 50px;
     border-radius: 7%;
