@@ -13,8 +13,8 @@ class GuidesController < ApplicationController
           coordinates: [location.lng, location.lat]
         },
         properties: {
-          title: location.city.capitalize,
-          description: 1,
+          title: "<a href='/guides/location.city.capitalize,
+          description: "Guides Available: #{location.guides.count}" ,
           :'marker-color' => '#f86767'
         }
       }
