@@ -33,13 +33,13 @@
     z-index: 1;
   }
 
-  label {
+  .search-box label {
     font-size: 2em;
     font-family: 'bitter', serif;
     line-height: 2.5em;
   }
 
- input[type="text"], {
+ .search-box input[type="text"], {
     border:none;
     border-bottom: 2px solid #999;
     border-radius: 0;
