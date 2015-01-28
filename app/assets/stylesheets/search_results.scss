@@ -85,9 +85,8 @@
 
  .search-box input[type="text"] {
     border:none;
-    border-bottom: 2px solid #FFF;
-    border-radius: 0;
-    background: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
     -webkit-appearance: none;
     font-size: 2em;
     line-height: 90%;
