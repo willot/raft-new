@@ -11,8 +11,6 @@ class Location < ActiveRecord::Base
   has_many :search_result_locations
   has_many :search_results, through: :search_result_locations
 
-  has_many :residents, class_name: "User", foreign_key: "location_id"
-
   has_many :airports
 
   has_many :guides, class_name: "User", foreign_key: "location_id"

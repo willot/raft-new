@@ -1,11 +1,12 @@
 <div class="standard_box">
-  <br><br>
+  <!-- Mapbox  -->
+  <div id="map"></div>
+
   <h1>Find a guide</h1>
   <%= form_tag guides_search_path, method: "get" do %>
   <%= label_tag(:city, "Search by city:") %>
   <%= text_field_tag(:city) %>
   <%= submit_tag("Search") %>
 <% end %>
-<br>
   <span class="button "><%= link_to "Become a guide", new_guide_path %></span>
 </div>

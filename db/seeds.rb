@@ -23,11 +23,22 @@ end
 #     email: Faker::Internet.email,
 #     password: "password",
 #     bio: Faker::HipsterIpsum.paragraph,
-#     guide: [true, false].sample#,
-#     #location_id: Location.all.sample.id
 #     })
 # end
-#test
+
+# guides = 20.times.map do
+#   User.create! ({
+#     first_name: Faker::Name.first_name,
+#     last_name: Faker::Name.last_name,
+#     username: Faker::Internet.user_name,
+#     age: rand(18..60),
+#     email: Faker::Internet.email,
+#     password: "password",
+#     bio: Faker::HipsterIpsum.paragraph,
+#     guide: true,
+#     location_id: Location.all.sample.id
+#     })
+# end
 
 # trips = 10.times.map do
 #   Trip.create!({
