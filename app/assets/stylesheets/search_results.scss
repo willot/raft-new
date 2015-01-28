@@ -33,14 +33,23 @@
     z-index: 1;
   }
 
+  label {
+    font-size: 2em;
+    font-family: 'bitter', serif;
+    line-height: 2.5em;
+  }
+
  input[type="text"], {
     border:none;
-    border-bottom: 1px solid #999;
+    border-bottom: 2px solid #999;
     border-radius: 0;
     background: none;
     -webkit-appearance: none;
     font-size: 2em;
+    line-height: 90%;
+    font-family: 'satisfy', sans-serif;
     width: 30%;
+    margin-left: 10px;
   }
 
 /* Inital Search Results Page*/
