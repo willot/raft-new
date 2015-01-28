@@ -138,3 +138,41 @@
     margin: 10px;
   }
 
+
+/* Search Result Destination Nav */
+
+  #destinations {
+    margin-left: 5px;
+  }
+  #result-list {
+    text-align: right;
+    width: 10%;
+    margin-top: 0px;
+    padding: 10px;
+    background-color: #0aafc9;
+    border-radius: 0px 5px 5px 0px;
+    position: fixed;
+  }
+
+  #result-list ul {
+    list-style-type: none;
+  }
+
+  #result-list li {
+
+    padding: .7em;
+  }
+
+  #result-list a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #result-list a:hover {
+    color: #7acedb;
+  }
+
+  #result-list ul, #result-list h1{
+      margin: 0px;
+      padding: 0px;
+  }
