@@ -118,13 +118,27 @@
 /* Inital Search Results Page*/
 
   .result-card {
-    width: 75%;
-    background-color: rgba(142, 142, 142, 0.6);
+    width: 60%;
+    float: left;
     border-radius: 5px;
-    margin: auto ;
-    margin-top: -10px;
-    margin-bottom: 50px;
-    padding: 10px 10px 30px 10px;
+    margin: -10px 10px 50px 80px;
+    padding: 10px;
+    background-image: url(asset-path("bokehskyline.jpg"));
+  }
+
+  .title {
+    margin-top: -40px;
+    font-size: 3em;
+    width: 30%;
+    float: left;
+  }
+
+  .budget {
+    width: 30%;
+    float: right;
+    text-align: right;
+    font-size: 2em;
+    margin-top: -15px;
   }
 
   .button {
@@ -132,22 +146,12 @@
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
+    font-family: 'bitter', sans-serif;
   }
 
   .button a {
     text-decoration: none;
     color: black;
-  }
-
-  .initial_results img {
-    max-width:95%;
-    display:block;
-    margin: 10px auto;
-    border-radius: 5px;
-  }
-
-  .initial_results p {
-    margin: 10px;
   }
 
 

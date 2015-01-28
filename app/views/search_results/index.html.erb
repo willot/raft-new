@@ -9,13 +9,15 @@
 
 <div class="wrapper">
   <% @results.each do |result| %>
+    <div id="<%=result.destination%>"></div>
 
     <div class="result-card">
-      <div id="<%=result.destination%>"></div>
       <h1 class="title"><%= convert_airport_to_city(result.destination).capitalize %></h1>
-      <h3>$<%= GoogCurrency.eur_to_usd(result.price).to_i%></h3>
-      <%= image_tag('temp.jpg') %>
+      <h3 class="budget">$<%= GoogCurrency.eur_to_usd(result.price).to_i%></h3>
 
+<!--       <div id="location-img">
+        <%= image_tag('temp.jpg') %>
+      </div> -->
       <p>Leave <%= convert_airport_to_city(result.origin).capitalize %>
         <%= result.depart_time.month %>/<%= result.depart_time.day %>
         /<%= result.depart_time.year %>
