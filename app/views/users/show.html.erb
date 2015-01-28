@@ -1,18 +1,36 @@
 <div class="user_box">
-  <h1 id="first_name" ><%= @user.first_name %>!</h1>
-    <% if @user.guide == true %>
-    <h2 id="guide_status"><%= "I am available to guide you through the streets of #{@user.location.city.capitalize}" %></h2>
+
+  <div id="picture_holder">
+
+    <img class = "user_picture" src="http://traveler.lodossteam.com/content/images/2014/Mar/1.jpg">
+  </div>
+
+  <div id="user_text_holder">
+    <h1><%= @user.first_name %>!</h1>
     <p><%= @user.bio %></p>
-  <% end %>
+    <% if @user.guide == true %>
 
-  <% if @user.id == current_user.id %>
-    <%= link_to "Find users/guides", users_path %><br>
-    <%= link_to "Messages", user_messages_path(@user.id) %>
-  <% else %>
-    <%= link_to "Message this person!", new_user_message_path(@user.id) , :id => 'write_message' %>
-  <% end %><br>
+  </div>
 
+  <div id='user_page_link'>
+    <h2 id="guide_status"><%= "I am available to guide you through the streets of #{@user.location.city.capitalize}" %></h2>
+    <% end %>
+    <% if @user.id == current_user.id %>
+      <%= link_to "Read your Messages", user_messages_path(@user.id) %>
+    <% else %>
+      <%= link_to "Message this person!", new_user_message_path(@user.id) , :id => 'write_message' %>
+    <% end %><br>
+  </div>
   <%= flash[:notice] %>
 
 </div>
-<div id="background"></div>
+<div class="show_trips">
+
+  <% @user.trips.each do |trips|%>
+    <div class="badge_container">
+      <img class="badge" src="http://s3.amazonaws.com/commendablekids.com.prod/badges/55/large.png?1391053115">
+      <h3 class='trip_done'><%=trips.destination.city.capitalize%></h3>
+    </div>
+  <%end%>
+
+</div>

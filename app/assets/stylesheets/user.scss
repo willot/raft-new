@@ -1,6 +1,4 @@
-*{
-  border: 1px solid blue;
-}
+
 
 .standard_box h1 {
   font-size: 2em;
@@ -29,14 +27,56 @@
 
 .user_box{
   text-align: center;
-  width: 1000px;
-  height: 400px;
+  width: 800px;
+  height: 300px;
   margin: auto;
   padding: 50px;
 }
 
-#first_name{
+.user_picture{
+  height: 200px;
+  width: 200px;
+}
+
+#picture_holder{
   float: left;
   width: 30%;
   font-size: 2.5em;
+  float: left;
+}
+
+#user_text_holder{
+  float: right;
+  width: 60%;
+}
+
+#user_page_link{
+  clear: both;
+  padding: 5px;
+}
+
+.show_trips{
+  margin: auto;
+  height:200px;
+  width: 800px;
+}
+
+.trip_done{
+  margin: 5px 0;
+}
+
+.badge{
+  height: 80px;
+  width: 80px;
+}
+
+.badge_container{
+  float: left;
+  width: 200px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.badge_container:first-child {
+  margin-left: 0;
 }
