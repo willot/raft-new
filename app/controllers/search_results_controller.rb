@@ -15,6 +15,8 @@ class SearchResultsController < ApplicationController
   end
 
   def new
+    @guides = User.where(guide: true)
+
     @search_result = SearchResult.new
     @ip = request.ip
     @user_location = Location.new
