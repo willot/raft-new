@@ -1,6 +1,5 @@
 # require 'ffaker'
 require 'csv'
-require 'location.rb'
 
 
 CSV.foreach("#{Rails.root}/lib/data/airportcodes.csv", headers: false) do |row|
@@ -15,12 +14,18 @@ CSV.foreach("#{Rails.root}/lib/data/airportcodes.csv", headers: false) do |row|
     end
 end
 
-Location.all[0...50].each do |location|
- lat = location.latitude(location.city)
- location.update(lat: lat)
- lng = location.longitude(location.city)
- location.update(lng: lng)
+CSV.foreach("#{Rails.root}/lib/data/airlatlng.csv", headers: false) do |row|
+
+  if Airport.find_by(code: row[4]) != nil
+    airport = Airport.find_by(code: row[4])
+
+    lat = row[6].to_f
+    long = row[7].to_f
+    airport.location.update(lat: lat, lng: long)
+  end
 end
+
+
 
 
 # users = 20.times.map do
