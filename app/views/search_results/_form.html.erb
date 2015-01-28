@@ -1,4 +1,4 @@
-<%= form_for @search_result do |f| %>
+<%= form_for @search_result, html: {id: "flight-search"} do |f| %>
   <%= f.label "I want to leave from" %>
   <%= f.text_field :current_city, value: @city, include_blank: true, :"data-autocomplete-path" => autocomplete_location_city_search_results_path, id: 'current-city-text-field' %><br>
   <%= f.label "I have $" %>

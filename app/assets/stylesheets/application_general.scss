@@ -48,16 +48,6 @@
       padding: 0px;
   }
 
-input[type="text"], {
-  border:none;
-  border-bottom: 1px solid #999;
-  border-radius: 0;
-  background: none;
-  -webkit-appearance: none;
-  font-size: 2em;
-  width: 30%;
-}
-
 label {
   font-size: 2em;
   line-height: 2.5em;
@@ -91,13 +81,45 @@ label {
 
 #background {
   position: absolute;
-  width: 100%;
-  height: 100%;
   bottom: 0;
-  padding: 0;
+  left: 0;
+  width: 100%;
   background-image: url(asset-path("background.jpg"));
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 100%;
+  padding: 0;
   z-index: -2;
 }
+
+footer {
+  height: 50px;
+  background-color: #000;
+  opacity: 0.6;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+  footer ul {
+    list-style-type: none;
+  }
+
+  footer li {
+    display: inline;
+    padding: 2em;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  footer a:hover {
+    color: #FFF;
+  }
+
+  footer ul, nav h1{
+      margin: 0px;
+      padding: 0px;
+  }
+
