@@ -1,4 +1,4 @@
-  <h3 id="destinations"> Your <br> Destinations: </h3>
+  <h3 id="destinations"> Choose Your <br> Destination: </h3>
   <div id="result-list">
     <ul>
       <% @results.each do |result| %>
@@ -37,13 +37,4 @@
       <span class="button "><%= link_to "Book Ticket", momondo_url(result), :target => "_blank" %></span>
     </div>
   <% end %>
-</div>
-
-<div class="sidebar">
-  <% if current_user %>
-    <h3><%= link_to "Save Search Results", save_search_path(search: @search_result.id), method: :post %></h3>
-  <% else %>
-    <h3> <%= link_to 'Log In', '/login' %> or <%= link_to 'Sign Up', new_user_path %><br>to save search results </h3>
-  <%end%>
-  <h3><%= link_to "New Search", new_search_result_path%></h3>
 </div>

@@ -109,9 +109,11 @@
 
   .result-card {
     width: 75%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(142, 142, 142, 0.6);
     border-radius: 5px;
-    margin: 20px auto;
+    margin: auto ;
+    margin-top: -10px;
+    margin-bottom: 50px;
     padding: 10px 10px 30px 10px;
   }
 
@@ -144,6 +146,7 @@
   #destinations {
     margin-left: 5px;
   }
+
   #result-list {
     text-align: right;
     width: 10%;
