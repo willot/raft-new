@@ -2,13 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+* {
+  border: 1px solid black;
+}
 
 body {
   margin: 0;
   padding: 0;
-
 }
+
 #trip_map {
   position: absolute;
   width: 100%;
@@ -27,78 +29,77 @@ body {
   margin: 225px auto;
   text-align: center;
   padding-top: 25px;
+  font-family: Sans-serif;
 }
 
 #content {
  width: 50%;
-    min-height: 350px;
-    position: relative;
-    margin-top: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-    left: 0;
-    right: 0;
-    background-color: rgba(111, 111, 111, 0.5);
-    padding: 10px;
-    border-radius: 10px;
+  min-height: 350px;
+  position: relative;
+  margin-top: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  left: 0;
+  right: 0;
+  background-color: rgba(111, 111, 111, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1;
+}
 
-    z-index: 1;
+#join-trip {
+  width: 8em;
+  margin-top: -1.3em;
 }
 
 #trip_creator {
-  height: 12em;
-  width: 12em;
-  margin-left: 6em;
+  height: 15em;
+  width: 15em;
+  margin-left: 3em;
   margin-top: 3em;
-  border-radius: 50%;
+  border-radius: 10%;
   background-image: url("http://www.theschulhofcenter.com/wp-content/uploads/2014/09/woman_smiling.jpg")
 }
 
 #description {
-  height: 8em;
+  height: 7em;
   width: 30em;
-  float: right;
-  margin-right: 7em;
-  margin-top: 6em;
-  color: white;
+  margin-left: 9%;
+  margin-top: -13em;
+  padding: 1em;
+}
+
+#invite {
+margin-top: -1%;
+padding-right: 3%;
 }
 
 .button_to {
-  width: 15%;
   height: 3em;
   float: right;
-  margin-top: -1.5em;
+  .book {
+    width: 130px;
+    height: 50px;
+    border-radius: 7%;
+    background-color: #f76565;
+    margin-top: -10em;
+    margin-left: 1em;
+  }
 }
 
-.book {
-  width: 130px;
-  height: 50px;
-  border-radius: 7%;
-  background-color: red;
-}
-
-.button-nav {
-   margin-top: 2em;
-
-}
-
-.button-nav ul {
-  list-style: none;
+.info {
+  width: 70%;
+  float: right;
   text-align: center;
-  padding: 0;
-
-
-}
-
-.button-nav li {
-  display: inline-block;
-
 }
 
 .twitter-share-button  {
-  padding-bottom: 0;
   margin-bottom: -0.4em;
+}
+
+.fb-share-button {
+  padding-right: 3%;
 }
 
 
