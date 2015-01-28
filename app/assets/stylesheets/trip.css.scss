@@ -2,10 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-* {
-  border: 1px solid black;
-}
 
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
 #trip_map {
   position: absolute;
   width: 100%;
@@ -48,7 +51,6 @@
   width: 12em;
   margin-left: 6em;
   margin-top: 3em;
-  float: left;
   border-radius: 50%;
   background-image: url("http://www.theschulhofcenter.com/wp-content/uploads/2014/09/woman_smiling.jpg")
 }
@@ -63,14 +65,43 @@
 }
 
 .button_to {
-  width: 25%;
-  height: 5em;
+  width: 15%;
+  height: 3em;
+  float: right;
+  margin-top: -1.5em;
 }
 
-a.book {
+.book {
+  width: 130px;
+  height: 50px;
+  border-radius: 7%;
   background-color: red;
+}
+
+.button-nav {
+   margin-top: 2em;
 
 }
+
+.button-nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+
+
+}
+
+.button-nav li {
+  display: inline-block;
+
+}
+
+.twitter-share-button  {
+  padding-bottom: 0;
+  margin-bottom: -0.4em;
+}
+
+
 
 
 
