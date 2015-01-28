@@ -11,13 +11,14 @@
     margin: 0px;
     padding: 0px;
     margin: aut0;
-    z-index: -1;
+    z-index: 0;
     top: 0;
     bottom: 0;
     background-color: #000;
   }
 
   .top-heading {
+    position: relative;
     width: 20%;
     margin: auto;
   }
@@ -32,6 +33,7 @@
 
   .sub-heading {
     width: 20%;
+    position: relative;
     margin: auto;
     /* background-color: #00a5c0; */
     opacity: 0.8;
@@ -51,14 +53,14 @@
   #box-head{
     font-size: 1.8em;
     position: absolute;
-    color: #0aafc9;
+    color: #44c9dd;
     text-align: left;
-    margin: -40px 0px 2px 0px;
+    margin: -40px -90px;
     text-shadow: .5px .5px 2px #2b2b2b;
   }
 
  .search-box {
-    width: 50%;
+    width: 40%;
     min-height: 350px;
     position: absolute;
     margin-top: 175px;
@@ -67,10 +69,11 @@
     margin-bottom: 100px;
     left: 0;
     right: 0;
-    background-color: rgba(150, 150, 150, 0.5);
+    background-color: rgba(150, 150, 150, 0.7);
     padding: 10px;
+    padding-left: 80px;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     z-index: 1;
   }
 
@@ -91,13 +94,11 @@
     font-family: 'satisfy', sans-serif;
     width: 30%;
     margin-left: 10px;
+    padding: 0 10px;
   }
 
-  .search-box input[type=text]:focus {
-    border: none;
-    -webkit-appearance: none;
-    border-radius: 0;
-    background: none;
+  .search-box input[type=text]:focus, .search-box input[type=text]:active {
+    outline: 0
   }
 
   .search-box input[type=submit]:hover {

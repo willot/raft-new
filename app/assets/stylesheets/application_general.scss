@@ -29,6 +29,7 @@
     padding: 10px;
     background-color: #8e8e8e;
     opacity:0.6;
+    position: relative;
     z-index: 1;
   }
 
@@ -94,12 +95,12 @@
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  left: 0;
   z-index: 0;
   height: 25px;
-  background-color: #055968;
-  opacity: 0.9;
+  background-color: #006170;
   width: 100%;
 }
 
@@ -120,12 +121,6 @@ footer {
   footer a:hover {
     color: #FFF;
   }
-
-  footer ul, nav h1{
-      margin: 0px;
-      padding: 0px;
-  }
-
 
   .wrapper {
     margin: auto;
