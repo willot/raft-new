@@ -25,9 +25,6 @@ CSV.foreach("#{Rails.root}/lib/data/airlatlng.csv", headers: false) do |row|
   end
 end
 
-
-
-
 # users = 20.times.map do
 #   User.create!({
 #     first_name: Faker::Name.first_name,
