@@ -15,9 +15,7 @@ class GuidesController < ApplicationController
         properties: {
           title: location.city.capitalize,
           description: 1,
-          :'marker-color' => '#f86767',
-          :'marker-symbol' => 'circle',
-          :'marker-size' => 'large'
+          :'marker-color' => '#f86767'
         }
       }
     end
