@@ -5,7 +5,7 @@
 $(document).ready(function() {
   var showMap = function(data) {
     L.mapbox.accessToken = 'pk.eyJ1IjoiamFtYXppbmciLCJhIjoiWm5QaUdZZyJ9.A91w3rJWJ3XWcuyz7kW8GA';
-    var map = L.mapbox.map('tripmap', 'jamazing.l2jlo2pp', {zoomControl: false}).setView([40, -74.50], );
+    var map = L.mapbox.map('tripmap', 'jamazing.l2jlo2pp', {zoomControl: false}).setView([40, -74.50]);
 
     map.dragging.disable();
     map.touchZoom.disable();
@@ -21,6 +21,6 @@ $(document).ready(function() {
       var polyline_options = {color: '#000'};
       var polyline = L.polyline(line, polyline_options).addTo(map);
     });
-  }
+  };
   showMap(window.coords);
 });
