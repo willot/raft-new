@@ -2,16 +2,19 @@
 <div id="map"></div>
 
 <div id="guides">
-  <% if current_user.guide == false %>
-    <h1>Become a Guide in ...</h1>
-    <%= form_for @guide do |f| %>
-      <%= f.hidden_field :guide, value: true %>
-      <%= f.text_field :location, placeholder: "your city" %><br>
+  <% if current_user %>
+    <% if current_user.guide == false %>
+      <h1>Become a Guide in ...</h1>
+      <%= form_for @guide do |f| %>
+        <%= f.hidden_field :guide, value: true %>
+        <%= f.text_field :location, placeholder: "your city" %><br>
 
-      <%= f.submit "Sign Me Up!" %>
+        <%= f.submit "Sign Me Up!" %>
+      <% end %>
+    <% else %>
+      <h1><%= @guides.count %> <br> Guides Available </h1>
     <% end %>
-  <% else %>
-    <h1><%= @guides.count %> <br> Guides Available </h1>
-  <% end %>
-
+    <%else%>
+    <h1> Please Log In to become a Guide </h1>
+  <%end%>
 </div>

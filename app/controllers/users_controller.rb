@@ -13,6 +13,15 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @locations = Array.new
+
+    @user.created_trips.each do |trip|
+      @locations << trip.destination
+    end
+
+    @user.trips.each do |trip|
+      @locations << trip.destination
+    end
   end
 
   def create
