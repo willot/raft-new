@@ -16,7 +16,6 @@ $(document).ready(function() {
 
     map.featureLayer.on('ready', function(e) {
       var line = data;
-      debugger;
 
       var polyline_options = {color: '#000'};
       var polyline = L.polyline(line, polyline_options).addTo(map);
