@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div id="fb-root"></div>
 <div id="trip_map">
   <h1 id="trip_title">From <%= @trip.origin.city.capitalize %> to <%= @trip.destination.city.capitalize %></h1>
@@ -39,5 +40,13 @@
   </div>
 
 
+=======
+<div class="standard_box">
+  <script id="coord" type="text/json">
+    <%= @coord.to_json %>
+  </script>
+  <div id="tripmap"></div>
+  <h1><%= @trip.origin.city.capitalize %> to <%= @trip.destination.city.capitalize %></h1>
+>>>>>>> 55259ef322c97369bdacae17cfccd7806270d691
 
 
