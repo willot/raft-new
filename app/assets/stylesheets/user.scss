@@ -1,0 +1,130 @@
+
+.standard_box h1 {
+  font-size: 2em;
+  background-color: blue;
+}
+
+#write_message {
+  font: bold 1.1em ;
+  text-decoration: none;
+  padding: 2px 6px 2px 6px;
+  width: 20%;
+  padding: 20px;
+  background: rgba(10, 175, 201, .5);
+  border-radius: 5px;
+}
+
+.user_box{
+  margin-top: 150px;
+  text-align: center;
+  width: 800px;
+  height: 300px;
+  margin: auto;
+  padding: 50px;
+}
+
+.user_picture{
+  height: 200px;
+  width: 200px;
+}
+
+#picture_holder{
+  float: left;
+  width: 30%;
+  font-size: 2.5em;
+  float: left;
+}
+
+#user_text_holder{
+  float: right;
+  width: 60%;
+  margin_bottom: 25px;
+}
+
+.button_links_user{
+  float: right;
+}
+
+#guide_status{
+  clear: both;
+  padding: 5px;
+}
+
+.show_trips{
+  margin: auto;
+  height:150px;
+  width: 800px;
+  border: 5px solid #44c9dd;
+}
+
+.trip_done{
+  margin: 5px 0;
+}
+
+.badge{
+  height: 80px;
+  width: 80px;
+}
+
+.badge_container{
+  float: left;
+  width: 200px;
+  text-align: center;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+
+.badge_container:first-child {
+  margin-left: 0;
+}
+
+#badge_title {
+  width: 800px;
+  margin: auto;
+  text_align: center;
+}
+
+/*testing the css for the message form*/
+.new_message{
+    width: 575px;
+    min-height: 200px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    left: 0;
+    right: 0;
+    background-color: rgba(150, 150, 150, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 1;
+  }
+
+.input-field label {
+  width: 100px;
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  text-align: right;
+  padding: 5px 15px 0 0;
+}
+
+#submission{
+  text-align: center;
+}
+
+#label1{
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+#label2{
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
