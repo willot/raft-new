@@ -1,16 +1,27 @@
+<!-- SIDE BAR: SHOWS ALL POTENTIAL DESTINATIONS-->
+  <!-- DONE! -->
+  <h3 id="destinations"> Choose Your <br> Destination: </h3>
+  <div id="result-list">
+    <ul>
+      <% @results.each do |result| %>
+        <li> <%= link_to convert_airport_to_city(result.destination).capitalize, anchor: result.destination %> </li>
+      <% end %>
+    </ul>
+  </div>
 
+<!-- LISTS ALL DESTINATION W/ INFO -->
+<!-- NEEDS FINE TUNING -->
 
 <div class="wrapper">
   <% @results.each do |result| %>
+    <!-- DIV FOR SIDE MENU LINKS-->
 
     <div class="result-card">
       <h1 class="title"><%= convert_airport_to_city(result.destination).capitalize %></h1>
-      <h3>$<%= GoogCurrency.eur_to_usd(result.price).to_i%></h3>
-      <%= image_tag('temp.jpg') %>
+      <h3 class="budget">$<%= GoogCurrency.eur_to_usd(result.price).to_i%></h3>
 
       <p>Leave <%= convert_airport_to_city(result.origin).capitalize %>
-        <%= result.depart_time.month %>/<%= result.depart_time.day %>
-        /<%= result.depart_time.year %>
+        <%= result.depart_time.month %>/<%= result.depart_time.day %>/<%= result.depart_time.year %>
         <br>
         Leave  <%= convert_airport_to_city(result.destination).capitalize %>
         <%= result.return_time.month %>/<%= result.return_time.day %>
@@ -27,15 +38,8 @@
       <% end %>
 
       <span class="button "><%= link_to "Book Ticket", momondo_url(result), :target => "_blank" %></span>
+
+      <div id="<%=result.destination%>"></div>
     </div>
   <% end %>
-</div>
-
-<div class="sidebar">
-  <% if current_user %>
-    <h3><%= link_to "Save Search Results", save_search_path(search: @search_result.id), method: :post %></h3>
-  <% else %>
-    <h3> <%= link_to 'Log In', '/login' %> or <%= link_to 'Sign Up', new_user_path %><br>to save search results </h3>
-  <%end%>
-  <h3><%= link_to "New Search", new_search_result_path%></h3>
 </div>
