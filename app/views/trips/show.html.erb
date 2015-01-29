@@ -15,39 +15,29 @@
     <% end %>
 
     <h1 class="content-header">Join my Trip!</h1>
-      <div id="trip_creator"><h1><%= link_to @trip.creator.username.capitalize, user_path(@trip.creator.id), class: "user-link" %></h1></div>
-      <h1 id="username"><%= link_to @trip.creator.username, user_path(@trip.creator.id) %></h1>
+    <div id="trip_creator"><h1><%= link_to @trip.creator.username.capitalize, user_path(@trip.creator.id) %></h1></div>
 
-    <div class="info">
-        <%= form_for @trip do |f| %>
-          <%= f.text_area :description, class: 'description' %><br />
-        <% end %>
+    <div id="information">
+      <div class="info">
+          <%= form_for @trip do |f| %>
+            <%= f.text_area :description, class: 'description', :rows => 5 %>
+          <% end %>
+        <div id="social_media">
+          <h1 id="invite">Invite Friends:</h1>
+          <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-width="24px" data-layout="button"></div>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Join my trip to <%= @trip.destination.city.capitalize %>!">Tweet
+          </a>
+        </div>
+      </div>
+      <div id="guides">
+        <h1>Suggested Guides</h1>
 
-      <h1 id="invite">Invite Friends:</h1>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Join my trip to <%= @trip.destination.city.capitalize %>!">Tweet
-      </a>
-       <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-width="24px" data-layout="button"></div>
-    </div>
-  </div>
-
-  <div class="content" id="guides">
-    <h1 class="content-header">Suggested Guides</h1>
-
-      <div id="each_guide">
-        <% @trip.destination.guides[0..2].each_with_index do |guide, n| %>
-          <%= link_to guide.first_name.capitalize, user_path(guide.id), class: "user-link#{n}" %>
-
-        <% end %>
-         <%= button_to "Request", nil, {class: "request0"} %>
-         <%= button_to "Request", nil, {class: "request1"} %>
-         <%= button_to "Request", nil, {class: "request2"} %>
+        <div id="each_guide">
+          <% @trip.destination.guides[0..2].each_with_index do |guide, n| %>
+            <%= link_to guide.first_name.capitalize, user_path(guide.id), class: "user-link" %>
+          <% end %>
+        </div>
       </div>
 
+    </div>
   </div>
-
-
-
-
-
-
-
