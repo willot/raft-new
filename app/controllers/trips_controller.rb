@@ -17,7 +17,7 @@ class TripsController < ApplicationController
   def create
     @trip = Trip.new(trip_params)
     @trip.user_id = current_user.id
-    p @trip
+
     if @trip.save
       redirect_to  @trip
     else
@@ -26,7 +26,14 @@ class TripsController < ApplicationController
   end
 
   def show
+    #For Mapbox
+    @coord = [[@trip.destination.lat, @trip.destination.lng],
+              [@trip.origin.lat, @trip.origin.lng]]
 
+    respond_to do |format|
+      format.html
+      format.json { render json: @coord }
+    end
   end
 
   private
