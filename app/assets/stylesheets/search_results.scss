@@ -60,17 +60,17 @@
   }
 
  .search-box {
-    width: 40%;
-    min-height: 200px;
-    position: absolute;
+    width: 600px;
+    max-height: 200px;
+    position: fixed;
     margin-top: 175px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
     left: 0;
     right: 0;
-    background-color: rgba(150, 150, 150, 0.3);
-    padding: 15px 20px 10px 40px;
+    background-color: rgba(150, 150, 150, 0.4);
+    padding: 15px 20px 10px 60px;
     border-radius: 10px;
     text-align: left;
     z-index: 1;
@@ -91,13 +91,26 @@
     font-size: 2em;
     line-height: 90%;
     font-family: 'satisfy', sans-serif;
-    width: 30%;
+    width: 40%;
     margin-left: 10px;
     padding: 0 10px;
   }
 
   .search-box input[type=text]:focus, .search-box input[type=text]:active {
     outline: 0
+  }
+
+  .search-box input[type=submit] {
+    padding: 20px 20px;
+    margin-top: 20px;
+    margin-right: 40px;
+    width: 150px;
+    background: rgba(10, 175, 201, .9);
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-family: 'bitter', serif;
   }
 
   /* DROP DOWN MENU FORMAT */
@@ -112,7 +125,7 @@
 
   #city-field {width:90%;}
   #date-field {width: 40%; float: left;}
-  #budget-field {width: 55%; float: right; margin-right: 0px; text-align: left;}
+  #budget-field {width: 55%; float: right; margin-left: -10px; text-align: left;}
   #submit {float: right; text-align: right; margin-right: 20px;}
 
 

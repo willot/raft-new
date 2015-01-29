@@ -2,6 +2,8 @@ class GuidesController < ApplicationController
   before_action :guided_locations, only: [:index]
 
   def index
+    @guide = User.find(session[:user_id])
+    @guides = User.where(guide: true)
     #For Mapbox
     @geojson = Array.new
     @guided_locations.each do |location|
