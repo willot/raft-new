@@ -3,11 +3,11 @@
   <h1 id="trip_title">From <%= @trip.origin.city.capitalize %> to <%= @trip.destination.city.capitalize %></h1>
 </div>
 
-  <div id="content">
+  <div class="content">
     <!--- insert link to trip on momondo -->
     <%= button_to "Join", nil, {class: "join-trip"} %>
    <%= button_to "Book it!", nil, {class: "book"} %>
-    <h1 id="join-trip">Join my Trip!</h1>
+    <h1 class="content-header">Join my Trip!</h1>
       <div id="trip_creator"><h1><%= link_to @trip.creator.username.capitalize, user_path(@trip.creator.id), class: "user-link" %></h1></div>
       <!-- <h1 id="username"><%= link_to @trip.creator.username, user_path(@trip.creator.id) %></h1> -->
 
@@ -21,6 +21,18 @@
        <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-width="24px" data-layout="button"></div>
     </div>
   </div>
+
+  <div class="content" id="guides">
+    <h1 class="content-header">Suggested Guides</h1>
+
+      <div id="each_guide">
+        <% @trip.destination.guides.each do |guide| %>
+        <h1><%= link_to guide.first_name.capitalize, user_path(guide.id), class: "user-link" %></h1>
+           <% end %>
+      </div>
+
+  </div>
+
 
 
 

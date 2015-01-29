@@ -2,6 +2,7 @@
 require 'csv'
 
 
+
 CSV.foreach("#{Rails.root}/lib/data/airportcodes.csv", headers: false) do |row|
     city = row[0].split(',')
     existing_location = Location.find_by(city: city[0].downcase)
@@ -55,19 +56,21 @@ end
 #     })
 # end
 
-# guides = 200.times.map do
-#   User.create! ({
-#     first_name: Faker::Name.first_name,
-#     last_name: Faker::Name.last_name,
-#     username: Faker::Internet.user_name,
-#     age: rand(18..60),
-#     email: Faker::Internet.email,
-#     password: "password",
-#     bio: Faker::HipsterIpsum.paragraph,
-#     guide: true,
-#     location_id: Location.all.sample.id
-#     })
-# end
+guides = 200.times.map do |n|
+ username = Faker::Internet.user_name
+ username = "#{username}_#{n}"
+  User.create! ({
+    first_name: Faker::Name.first_name,
+    last_name: Faker::Name.last_name,
+    username: username,
+    age: rand(18..60),
+    email: Faker::Internet.email,
+    password: "password",
+    bio: Faker::HipsterIpsum.paragraph,
+    guide: true,
+    location_id: Location.all.sample.id
+    })
+end
 
 # search_results = 5.times.map do
 #   SearchResult.create!({

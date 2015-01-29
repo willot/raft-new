@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+* {
+  border: 1px solid black;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -28,7 +32,7 @@ body {
   font-family: Sans-serif;
 }
 
-#content {
+.content {
   width: 50%;
   min-height: 350px;
   position: relative;
@@ -44,7 +48,7 @@ body {
   z-index: 1;
 }
 
-#join-trip {
+.content-header {
   width: 8em;
   margin-top: -1.3em;
 }
@@ -103,8 +107,9 @@ padding-right: 3%;
   padding-right: 3%;
 }
 
-
-
+#guides.content {
+  margin-top: -50px;
+}
 
 
 
