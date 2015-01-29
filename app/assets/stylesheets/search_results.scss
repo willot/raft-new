@@ -25,29 +25,29 @@
 
   .top-heading h1 {
     font-family: 'bitter', serif;
-    text-shadow: 2px 2px 6px #000;
+    text-shadow: 2px 2px 9px #000;
     font-size: 5em;
     text-align: center;
     margin: 20px 0px 5px 0px;
   }
 
   .sub-heading {
-    width: 20%;
+    width: 40%;
     position: relative;
     margin: auto;
     /* background-color: #00a5c0; */
     opacity: 0.8;
     /* box-shadow: 3px 3px 9px #888888; */
     border-radius: 5px;
+    text-align: center;
   }
 
   .sub-heading h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: bitter, sans-serif;
-    color: white;
-    text-align: center;
-    margin-top: 5px;
-    text-shadow: 2px 2px 6px #000;
+    color: #f22e2e;
+    margin: 5px;
+    text-shadow: 2px 2px 7px #898989;
   }
 
   #box-head{
@@ -55,13 +55,13 @@
     position: absolute;
     color: #44c9dd;
     text-align: left;
-    margin: -40px -110px;
+    margin: -45px -50px;
     text-shadow: .5px .5px 2px #2b2b2b;
   }
 
  .search-box {
     width: 40%;
-    min-height: 350px;
+    min-height: 200px;
     position: absolute;
     margin-top: 175px;
     margin-left: auto;
@@ -70,8 +70,7 @@
     left: 0;
     right: 0;
     background-color: rgba(150, 150, 150, 0.3);
-    padding: 10px;
-    padding-left: 100px;
+    padding: 15px 20px 10px 40px;
     border-radius: 10px;
     text-align: left;
     z-index: 1;
@@ -85,9 +84,9 @@
 
  .search-box input[type="text"] {
     border:none;
-    border-bottom: 2px solid #FFF;
-    border-radius: 0;
-    background: none;
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
     -webkit-appearance: none;
     font-size: 2em;
     line-height: 90%;
@@ -101,25 +100,69 @@
     outline: 0
   }
 
-  .search-box input[type=submit]:hover {
-    background: #ccc;
+  /* DROP DOWN MENU FORMAT */
+  select {
+    -webkit-appearance: none;
+    border: none;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-family: 'satisfy', sans-serif;
+    font-size: 1.25em;
   }
 
-/* Inital Search Results Page*/
+  #city-field {width:90%;}
+  #date-field {width: 40%; float: left;}
+  #budget-field {width: 55%; float: right; margin-right: 0px; text-align: left;}
+  #submit {float: right; text-align: right; margin-right: 20px;}
+
+
+
+/* Inital Search Results Page */
 
   .result-card {
-    width: 75%;
-    background-color: rgba(255, 255, 255, 0.8);
+    display: block;
+    width: 30%;
+    float: left;
     border-radius: 5px;
-    margin: 20px auto;
-    padding: 10px 10px 30px 10px;
+    margin: -10px 10px 80px 90px;
+    padding: 10px;
+    background-image: url(asset-path("four.jpg"));
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+  }
+
+  .title {
+    margin-top: -60px;
+    margin-bottom: 0px;
+    font-size: 3em;
+    width: 30%;
+    float: left;
+  }
+
+  .budget {
+    width: 30%;
+    float: right;
+    text-align: right;
+    font-size: 2em;
+    margin-top: -15px;
+  }
+
+  .result-card p {
+    margin-top: 45px;
   }
 
   .button {
-    width: 20%;
+    width: 30%;
+    height: 30%;
     padding: 20px;
+    margin: 20px 5px;
     background-color: #fff;
     border-radius: 5px;
+    font-family: 'bitter', sans-serif;
+    text-align: center;
+    display: block;
+    float: right;
   }
 
   .button a {
@@ -127,14 +170,56 @@
     color: black;
   }
 
-  .initial_results img {
-    max-width:95%;
-    display:block;
-    margin: 10px auto;
+  .result-card input[type=submit] {
+    float: right;
+    padding: 20px 20px;
+    background: #fff;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
+    font-family: 'bitter', serif;
   }
 
-  .initial_results p {
-    margin: 10px;
+
+/* Search Result Destination Nav */
+
+  #destinations {
+    margin-left: 5px;
   }
 
+  #result-list {
+    text-align: right;
+    width: 10%;
+    margin-top: 0px;
+    padding: 10px;
+    background-color: #0aafc9;
+    border-radius: 0px 5px 5px 0px;
+    position: fixed;
+    opacity: 0.7;
+  }
+
+  #result-list ul {
+    list-style-type: none;
+  }
+
+  #result-list li {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.25;
+    padding: .7em;
+  }
+
+  #result-list a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  #result-list a:hover {
+    color: #fff;
+  }
+
+  #result-list ul, #result-list h1{
+      margin: 0px;
+      padding: 0px;
+  }
