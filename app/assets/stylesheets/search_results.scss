@@ -115,19 +115,26 @@
   #budget-field {width: 55%; float: right; margin-right: 0px; text-align: left;}
   #submit {float: right; text-align: right; margin-right: 20px;}
 
-/* Inital Search Results Page*/
+
+
+/* Inital Search Results Page */
 
   .result-card {
-    width: 60%;
+
+    display: block;
+    width: 30%;
     float: left;
     border-radius: 5px;
-    margin: -10px 10px 50px 80px;
+    margin: -10px 10px 80px 90px;
     padding: 10px;
-    background-image: url(asset-path("bokehskyline.jpg"));
+    background-image: url(asset-path("four.jpg"));
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
   }
 
   .title {
-    margin-top: -40px;
+    margin-top: -60px;
     font-size: 3em;
     width: 30%;
     float: left;
@@ -169,6 +176,7 @@
     background-color: #0aafc9;
     border-radius: 0px 5px 5px 0px;
     position: fixed;
+    opacity: 0.7;
   }
 
   #result-list ul {

@@ -1,3 +1,5 @@
+<!-- SIDE BAR: SHOWS ALL POTENTIAL DESTINATIONS-->
+  <!-- DONE! -->
   <h3 id="destinations"> Choose Your <br> Destination: </h3>
   <div id="result-list">
     <ul>
@@ -7,17 +9,17 @@
     </ul>
   </div>
 
+<!-- LISTS ALL DESTINATION W/ INFO -->
+<!-- NEEDS FINE TUNING -->
+
 <div class="wrapper">
   <% @results.each do |result| %>
-    <div id="<%=result.destination%>"></div>
+    <!-- DIV FOR SIDE MENU LINKS-->
 
     <div class="result-card">
       <h1 class="title"><%= convert_airport_to_city(result.destination).capitalize %></h1>
       <h3 class="budget">$<%= GoogCurrency.eur_to_usd(result.price).to_i%></h3>
 
-<!--       <div id="location-img">
-        <%= image_tag('temp.jpg') %>
-      </div> -->
       <p>Leave <%= convert_airport_to_city(result.origin).capitalize %>
         <%= result.depart_time.month %>/<%= result.depart_time.day %>
         /<%= result.depart_time.year %>
@@ -37,6 +39,8 @@
       <% end %>
 
       <span class="button "><%= link_to "Book Ticket", momondo_url(result), :target => "_blank" %></span>
+
+      <div id="<%=result.destination%>"></div>
     </div>
   <% end %>
 </div>
