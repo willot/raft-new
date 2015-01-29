@@ -1,12 +1,19 @@
 <div id="fb-root"></div>
-<div id="trip_map"></div>
-  <h1 id="trip_title">From <%= @trip.origin.city.capitalize %> to <%= @trip.destination.city.capitalize %></h1>
-</div>
+<div id="tripmap"></div>
 
+
+<script type="text/javascript" id="coords">
+  window.coords = <%= @coord.to_json %>;
+</script>
 <div class="content">
     <!--- insert link to trip on momondo -->
-    <%= button_to "Join", nil, {class: "join-trip"} %>
-   <%= button_to "Book it!", nil, {class: "book"} %>
+    <% if current_user %>
+      <%= button_to "Book it!", nil, {class: "book"} %>
+    <% else %>
+      <%= button_to "Book it!", nil, {class: "book"} %>
+      <%= button_to "Join", nil, {class: "join-trip"} %>
+    <% end %>
+
     <h1 class="content-header">Join my Trip!</h1>
       <div id="trip_creator"><h1><%= link_to @trip.creator.username.capitalize, user_path(@trip.creator.id), class: "user-link" %></h1></div>
       <h1 id="username"><%= link_to @trip.creator.username, user_path(@trip.creator.id) %></h1>
