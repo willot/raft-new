@@ -11,7 +11,6 @@ $('document').ready(function(){
 
 
     $.get(urlMessageNew, function(form){
-      console.log('test')
       $('#jsform').append(form);
     });
   });
@@ -26,5 +25,22 @@ $('document').ready(function(){
       $('body').find('#title_label_message').html("")
     })
 
+  })
+
+  $('#login').click(function(event){
+    event.preventDefault();
+    var urlLogin ='/login'
+
+      console.log("test")
+    $.get(urlLogin, function(form){
+      $('#loginAjax').append(form);
+    });
+
+  });
+
+
+  $('#loginAjax').on('submit', function(event){
+    event.preventDefault();
+    $('body').find('#loginAjax').html("")
   })
 })

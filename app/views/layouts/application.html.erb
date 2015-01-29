@@ -6,14 +6,6 @@
   <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
-<!--   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@flickr" />
-  <meta name="twitter:title" content="Small Island Developing States Photo Submission" />
-  <meta name="twitter:description" content="View the album on Flickr." />
-  <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" />
-  <meta name="twitter:url" content="https://guide-me2.herokuapp.com/" />
-</head>
- -->
 <body>
   <div id="top">
     <header>
@@ -27,7 +19,7 @@
           <li><%= link_to 'Guides', guides_path %></li>
           <li><%= link_to 'Sign Out', '/logout' %></li>
         <% else %>
-          <li><%= link_to 'Log In', '/login' %></li>
+          <li><%= link_to 'Log In', '/login', :id => 'login' %></li>
           <li><%= link_to 'Sign Up', new_user_path %></li>
         <% end %>
       </ul>
