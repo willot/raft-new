@@ -26,9 +26,6 @@ class UsersController < ApplicationController
     end
   end
 
-
-
-
   def update
     @guide = User.find(session[:user_id])
     @location = Location.find_by(city: (params[:user][:location]).downcase)

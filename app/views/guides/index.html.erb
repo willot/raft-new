@@ -1,13 +1,17 @@
-<div class="standard_box">
-  <!-- Mapbox  -->
-  <div id="map"></div>
+ <!-- Mapbox  -->
+<div id="map"></div>
 
-  <h1>Find a guide</h1>
-  <%= form_tag guides_search_path, method: "get" do %>
-  <%= label_tag(:city, "Search by city:") %>
-  <%= text_field_tag(:city) %>
-  <%= submit_tag("Search") %>
-<% end %>
-  <span class="button "><%= link_to "Become a guide", new_guide_path %></span>
+<div id="guides">
+  <% if current_user.guide == false %>
+    <h1>Become a Guide in ...</h1>
+    <%= form_for @guide do |f| %>
+      <%= f.hidden_field :guide, value: true %>
+      <%= f.text_field :location, placeholder: "your city" %><br>
+
+      <%= f.submit "Sign Me Up!" %>
+    <% end %>
+  <% else %>
+    <h1><%= @guides.count %> <br> Guides Available </h1>
+  <% end %>
+
 </div>
-<div id="background"></div>
