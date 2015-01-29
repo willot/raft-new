@@ -1,11 +1,7 @@
 <div class="standard_box">
   <h1>Login</h1>
   <%= @error if @error %>
+  <%= render 'form' %>
 
-  <%= form_tag '/login' do %>
-    Username: <%= text_field_tag :username %>
-    Password: <%= password_field_tag :password %>
-    <%= submit_tag "Login" %>
-  <% end %>
 </div>
 <div id="background"></div>
