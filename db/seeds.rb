@@ -74,7 +74,6 @@ end
 #     })
 # end
 
-
 # search_results = 5.times.map do
 #   SearchResult.create!({
 #     user_id: users.sample.id,
