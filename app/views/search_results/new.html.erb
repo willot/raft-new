@@ -4,8 +4,13 @@
   <h1> Raft </h1>
 </div>
 <div class="sub-heading">
+  <% if current_user %>
+    <h2> Hello <%= current_user.first_name %>!</h2>
+    <h2> Let's get you
+  <% else %>
     <h2>  taking you around the world   </h2>
-  <h2> with <%= @guides.count %> guides & counting </h3>
+    <h2> with <%= @guides.count %> guides & counting </h3>
+  <% end %>
 </div>
 
 <div class="search-box">
