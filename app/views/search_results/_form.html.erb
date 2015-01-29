@@ -1,11 +1,22 @@
-<%= form_for @search_result do |f| %>
-  <%= f.label "I want to leave from" %>
-  <%= f.text_field :current_city, value: @city, include_blank: true, :"data-autocomplete-path" => autocomplete_location_city_search_results_path, id: 'current-city-text-field' %><br>
-  <%= f.label "I have $" %>
-  <%= f.text_field :budget %><br>
-  <%= f.label "I'm leaving"%>
-  <%= f.date_select :start_at, start_year: 2015, discard_day: true, order: [:month, :year] %><br>
-  <%= f.submit "Send me somewhere" %><br><br>
+<%= form_for @search_result, html: {id: "flight-search"} do |f| %>
+  <div id="city-field">
+    <%= f.label "I want to get out of" %>
+    <%= f.text_field :current_city, value: @city, include_blank: true, :"data-autocomplete-path" => autocomplete_location_city_search_results_path %><br>
+  </div>
+  <div id="date-field">
+    <%= f.label "by" %>
+    <%= f.date_select :start_at, start_year: 2015, discard_day: true, order: [:month, :year]  %><br>
+  </div>
 
+  <div id="budget-field">
+    <%= f.label "with     $" %>
+    <%= f.text_field :budget  %><br>
+  </div>
+
+  <div id="submit">
+  <%= f.submit "Send me somewhere!" %><br><br>
+  </div>
     <%= flash[:error] %>
 <% end %>
+
+

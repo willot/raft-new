@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
 
   def new
+    render partial: 'form'
   end
 
   def create
@@ -9,6 +10,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
       redirect_to '/'
+      # render json: 'afegrhjj'
     else
       @error = "Incorrect Username or Password. Please try again."
       render :new

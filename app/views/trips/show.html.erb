@@ -1,4 +1,8 @@
 <div class="standard_box">
+  <script id="coord" type="text/json">
+    <%= @coord.to_json %>
+  </script>
+  <div id="tripmap"></div>
   <h1><%= @trip.origin.city.capitalize %> to <%= @trip.destination.city.capitalize %></h1>
 
   <%= link_to "Write a post", new_trip_message_path(@trip.id) %>

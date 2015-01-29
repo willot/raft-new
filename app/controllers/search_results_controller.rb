@@ -4,8 +4,6 @@ class SearchResultsController < ApplicationController
   before_action :set_user_results, only: [:user_index]
   before_action :set_result, only: [:show]
 
-  # autocomplete :location, :city, :full => true
-
   def autocomplete_location_city
     cities = Location.where("city ILIKE ?", "%#{params[:term]}%").pluck(:city)
     render :json => cities
@@ -15,6 +13,8 @@ class SearchResultsController < ApplicationController
   end
 
   def new
+    @guides = User.where(guide: true)
+
     @search_result = SearchResult.new
     @ip = request.ip
     @user_location = Location.new
@@ -22,16 +22,17 @@ class SearchResultsController < ApplicationController
   end
 
   def create
+    @guides = User.where(guide: true)
     @search_result = SearchResult.new(search_result_params)
     @client = Momondo::Client.new
     @city_search = Location.where(city: params[:search_result][:current_city])
 
     if @search_result.current_city.empty? || @city_search.empty?
-      flash[:error] = "City can't be empty"
+      flash[:error] = "Invalid City"
       render "search_results/new"
       return
     elsif @search_result.budget.nil?
-      flash[:error] = "Budget can't be empty"
+      flash[:error] = "Invalid"
       render "search_results/new"
       return
     else
@@ -63,7 +64,7 @@ class SearchResultsController < ApplicationController
     if @search.save
       redirect_to 'search_results/#{@search.id}'
     else
-      redirect_to '/'
+      render '/'
     end
   end
 
