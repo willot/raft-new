@@ -19,9 +19,10 @@
 
     <div id="information">
       <div class="info">
-          <%= form_for @trip do |f| %>
+        <h1>From <%=@trip.origin.city.capitalize %> to <%=@trip.destination.city.capitalize %> </h1>
+         <!--  <%= form_for @trip do |f| %>
             <%= f.text_area :description, class: 'description', :rows => 5 %>
-          <% end %>
+          <% end %> -->
         <div id="social_media">
           <h1 id="invite">Invite Friends:</h1>
           <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-width="24px" data-layout="button"></div>
