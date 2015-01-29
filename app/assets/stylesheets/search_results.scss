@@ -120,7 +120,6 @@
 /* Inital Search Results Page */
 
   .result-card {
-
     display: block;
     width: 30%;
     float: left;
@@ -135,6 +134,7 @@
 
   .title {
     margin-top: -60px;
+    margin-bottom: 0px;
     font-size: 3em;
     width: 30%;
     float: left;
@@ -148,17 +148,37 @@
     margin-top: -15px;
   }
 
+  .result-card p {
+    margin-top: 45px;
+  }
+
   .button {
-    width: 20%;
+    width: 30%;
+    height: 30%;
     padding: 20px;
+    margin: 20px 5px;
     background-color: #fff;
     border-radius: 5px;
     font-family: 'bitter', sans-serif;
+    text-align: center;
+    display: block;
+    float: right;
   }
 
   .button a {
     text-decoration: none;
     color: black;
+  }
+
+  .result-card input[type=submit] {
+    float: right;
+    padding: 20px 20px;
+    background: #fff;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-family: 'bitter', serif;
   }
 
 
@@ -184,17 +204,19 @@
   }
 
   #result-list li {
-
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.25;
     padding: .7em;
   }
 
   #result-list a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
   }
 
   #result-list a:hover {
-    color: #7acedb;
+    color: #fff;
   }
 
   #result-list ul, #result-list h1{
