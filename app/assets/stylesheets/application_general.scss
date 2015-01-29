@@ -24,16 +24,32 @@
 
 /*NAVIGATION*/
   nav {
-    text-align: right;
     margin: 0px;
+    height: 15px;
     padding: 10px;
     background-color: rgba(142, 142, 142, 0.6);
     position: relative;
     z-index: 1;
   }
 
+  nav h2 {
+    width: 30%;
+    margin-top: -10px;
+    margin-left: 30px;
+    padding: 2px;
+    float: left;
+    text-align: left;
+  }
+
+  nav h2 a {
+    color: #000;
+    }
+
   nav ul {
+   text-align: right;
     list-style-type: none;
+    width: 50%;
+    float: right;
   }
 
   nav li {
