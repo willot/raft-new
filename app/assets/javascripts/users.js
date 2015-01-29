@@ -23,24 +23,25 @@ $('document').ready(function(){
 
     $.post(urlpost, data, function(response){
       $('body').find('#title_label_message').html("")
-    })
-
-  })
-
-  $('#login').click(function(event){
-    event.preventDefault();
-    var urlLogin ='/login'
-
-      console.log("test")
-    $.get(urlLogin, function(form){
-      $('#loginAjax').append(form);
     });
 
   });
 
 
-  $('#loginAjax').on('submit', function(event){
-    event.preventDefault();
-    $('body').find('#loginAjax').html("")
-  })
+//   $('#login').click(function(event){
+//     event.preventDefault();
+//     var urlLogin ='/login'
+
+//       console.log("test")
+//     $.get(urlLogin, function(form){
+//       $('#loginAjax').append(form);
+//     });
+
+//   });
+
+
+//   $('#loginAjax').on('submit', function(event){
+//     event.preventDefault();
+//     $('body').find('#loginAjax').html("")
+//   })
 })

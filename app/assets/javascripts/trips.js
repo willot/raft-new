@@ -12,13 +12,14 @@ $(document).ready(function() {
     map.doubleClickZoom.disable();
     map.scrollWheelZoom.disable();
 
-    if (map.tap) map.tap.disable();
+    if (map.tap) { map.tap.disable(); }
 
     map.featureLayer.on('ready', function(e) {
       var line = data;
+
       var polyline_options = {color: '#000'};
       var polyline = L.polyline(line, polyline_options).addTo(map);
     });
-  }
-  showMap($.parseJSON($('script#coord').text()));
+  };
+  showMap(window.coords);
 });

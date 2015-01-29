@@ -43,7 +43,7 @@ class GuidesController < ApplicationController
     @guided_locations = []
     guides = User.where(guide: true)
 
-    guides.all.each do |guide|
+    guides.order("random()").limit(50).each do |guide|
       if guide.location.lat != nil
         location = guide.location
         @guided_locations << location
