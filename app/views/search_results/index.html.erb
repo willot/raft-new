@@ -21,8 +21,7 @@
       <h3 class="budget">$<%= GoogCurrency.eur_to_usd(result.price).to_i%></h3>
 
       <p>Leave <%= convert_airport_to_city(result.origin).capitalize %>
-        <%= result.depart_time.month %>/<%= result.depart_time.day %>
-        /<%= result.depart_time.year %>
+        <%= result.depart_time.month %>/<%= result.depart_time.day %>/<%= result.depart_time.year %>
         <br>
         Leave  <%= convert_airport_to_city(result.destination).capitalize %>
         <%= result.return_time.month %>/<%= result.return_time.day %>
