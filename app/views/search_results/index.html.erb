@@ -26,6 +26,13 @@
         Leave  <%= convert_airport_to_city(result.destination).capitalize %>
         <%= result.return_time.month %>/<%= result.return_time.day %>
         /<%= result.return_time.year %>
+        <br><br>
+      <% @guides = Location.find_by(city: convert_airport_to_city(result.destination)).guides %>
+      <% if @guides.count > 0 %>
+        <%= @guides.count %> Guides Available
+      <% else %>
+         No Guides Available in this Location
+      <%end%>
       </p><br>
 
       <%= form_for Trip.new do |f| %>
