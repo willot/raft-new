@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
   def new
-    render partial: 'form'
+    #render partial: 'form'
   end
 
   def create
