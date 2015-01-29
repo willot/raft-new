@@ -2,7 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+* {
+  border: 1px solid black;
+}
 
 body {
   margin: 0;
@@ -157,7 +159,9 @@ font-size: 2em;
    margin-right: 11em;
 }
 
-
+a:link {
+  color: black;
+}
 
 
 
