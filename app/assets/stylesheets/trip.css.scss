@@ -2,9 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-* {
-  border: 1px solid black;
-}
+
 
 body {
   margin: 0;
@@ -67,7 +65,7 @@ body {
   padding-top: 90%;
 }
 
-#description {
+.description {
   height: 7em;
   width: 30em;
   margin-left: 9%;
@@ -76,7 +74,7 @@ body {
 }
 
 #invite {
-margin-top: -1%;
+margin-top: -9%;
 padding-right: 3%;
 }
 
@@ -109,9 +107,55 @@ padding-right: 3%;
 
 #guides.content {
   margin-top: -50px;
+  min-height: 150px
 }
 
+.user-link0 {
+display: inline-block;
+width: 33%;
+height: 40px;
+text-align: center;
+font-size: 2em;
+}
 
+.user-link1 {
+  float: left;
+  width: 33%;
+  text-align: center;
+  font-size: 2em;
+}
+
+.user-link2 {
+  float: right;
+  width: 33%;
+  text-align: center;
+  font-size: 2em;
+}
+
+.request0 {
+  width: 130px;
+  height: 50px;
+  border-radius: 7%;
+  background-color: #f76565;
+  margin-right: 6em;
+}
+
+.request1 {
+  width: 130px;
+  height: 50px;
+  border-radius: 7%;
+  background-color: #f76565;
+   margin-right: 12em;
+
+}
+
+.request2 {
+  width: 130px;
+  height: 50px;
+  border-radius: 7%;
+  background-color: #f76565;
+   margin-right: 11em;
+}
 
 
 
