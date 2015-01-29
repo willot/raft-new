@@ -19,12 +19,14 @@ class GuidesController < ApplicationController
           description: "Guides Available: #{location.guides.count}" ,
           :'marker-color' => '#f86767'
         }
+
       }
     end
 
       respond_to do |format|
         format.html
         format.json { render json: @geojson }
+
       end
   end
 
@@ -42,8 +44,10 @@ class GuidesController < ApplicationController
     guides = User.where(guide: true)
 
     guides.all.each do |guide|
-      location = guide.location
-      @guided_locations << location
+      if guide.location.lat != nil
+        location = guide.location
+        @guided_locations << location
+      end
     end
   end
 end
