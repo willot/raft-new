@@ -30,11 +30,11 @@
           </a>
         </div>
       </div>
-      <div id="guides">
+      <div id="sug_guides">
         <h1>Suggested Guides</h1>
 
         <div id="each_guide">
-          <% @trip.destination.guides[0..2].each_with_index do |guide, n| %>
+          <% @trip.destination.guides[0..2].each_with_index do |guide| %>
             <%= link_to guide.first_name.capitalize, user_path(guide.id), class: "user-link" %>
           <% end %>
         </div>
